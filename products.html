@@ -44,7 +44,7 @@
 <div class="page-header">
   <div class="container">
     <h1>产品中心 Products</h1>
-    <p class="lead">8大产品类别 一站式采购</p>
+    <p class="lead">10大产品类别 一站式采购</p>
   </div>
 </div>
 
@@ -52,6 +52,13 @@
   <div class="container">
     <h2 class="section-title text-center">产品分类 Product Categories</h2>
     <div class="row g-4 mb-5">
+      <div class="col-md-3 col-6">
+        <div class="cat-card" onclick="document.getElementById('fasteners').scrollIntoView({behavior:'smooth'})">
+          <img src="images/categories/fasteners_small.jpg" class="cat-icon" style="width:60px;height:60px;object-fit:cover;border-radius:8px;">
+          <h5>紧固件</h5>
+          <p class="text-muted small">Fasteners</p>
+        </div>
+      </div>
       <div class="col-md-3 col-6">
         <div class="cat-card" onclick="document.getElementById('hardware').scrollIntoView({behavior:'smooth'})">
           <img src="images/categories/hardware_small.jpg" class="cat-icon" style="width:60px;height:60px;object-fit:cover;border-radius:8px;">
@@ -95,6 +102,13 @@
         </div>
       </div>
       <div class="col-md-3 col-6">
+        <div class="cat-card" onclick="document.getElementById('ppe').scrollIntoView({behavior:'smooth'})">
+          <img src="images/categories/ppe_small.jpg" class="cat-icon" style="width:60px;height:60px;object-fit:cover;border-radius:8px;">
+          <h5>劳防用品</h5>
+          <p class="text-muted small">PPE</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
         <div class="cat-card" onclick="document.getElementById('office').scrollIntoView({behavior:'smooth'})">
           <img src="images/categories/office_small.jpg" class="cat-icon" style="width:60px;height:60px;object-fit:cover;border-radius:8px;">
           <h5>办公用品</h5>
@@ -106,6 +120,38 @@
           <img src="images/categories/shelves_small.jpg" class="cat-icon" style="width:60px;height:60px;object-fit:cover;border-radius:8px;">
           <h5>货架展架</h5>
           <p class="text-muted small">Shelves</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="fasteners" class="product-section">
+      <h3 class="mb-4"><img src="images/categories/fasteners_small.jpg" style="width:32px;height:32px;object-fit:cover;border-radius:4px;vertical-align:middle;margin-right:8px;">紧固件 Fasteners</h3>
+      <div class="row">
+        <div class="col-md-8">
+          <h5>产品概述 Product Overview</h5>
+          <p>紧固件是机械连接的基础元件，包括螺栓、螺钉、螺母、垫圈、销键、铆钉等。产品涵盖GB、ISO、DIN、ANSI、JIS等多种标准体系，广泛应用于钢结构、建筑幕墙、桥梁工程、机械设备、汽车总装、轨道交通、船舶建造等领域。</p>
+          
+          <h5 class="mt-3">产品系列 Product Series</h5>
+          <ul>
+            <li><strong>高强度螺栓 High Strength Bolts：</strong>大六角头螺栓、扭剪螺栓、法兰面螺栓，强度等级8.8级~12.9级，适用于钢结构和重要连接部位</li>
+            <li><strong>钢结构螺栓 Steel Structure Bolts：</strong>摩擦型高强螺栓、承压型高强螺栓、热镀锌螺栓，防腐性能好，适合户外和潮湿环境</li>
+            <li><strong>膨胀螺栓 Expansion Bolts：</strong>金属膨胀螺栓、尼龙膨胀螺栓、车修壁虎，适用于混凝土、砖墙、石材等多种基材</li>
+            <li><strong>化学锚栓 Chemical Anchors：</strong>乙烯基酯锚固胶、环氧锚固剂，锚固力强，适合开裂混凝土和受荷要求高的场合</li>
+            <li><strong>自攻螺钉 Self-Tapping Screws：</strong>盘头螺钉、沉头螺钉、六角法兰螺钉，材质有碳钢镀锌、不锈钢，适合薄板连接</li>
+            <li><strong>铆钉类 Rivets：</strong>抽芯铆钉、击芯铆钉、压铆螺柱，铆接强度高，适合无法焊接的场合</li>
+          </ul>
+
+          <h5 class="mt-3">应用领域 Applications</h5>
+          <p>钢结构建筑 | 桥梁工程 | 建筑幕墙 | 汽车总装 | 轨道交通 | 船舶建造 | 机械设备的装配与维修</p>
+
+          <h5 class="mt-3">为什么选择我们 Why Choose Us</h5>
+          <p>✓ 库存充足，供货周期短（常规3~5天，加急次日可达）<br>
+          ✓ 规格齐全：M6~M72，常规标准件均有备货<br>
+          ✓ 特殊材质可选：不锈钢304/316、镀锌、达克罗、热镀锌<br>
+          ✓ 可提供材质证明、扭矩系数检测报告、第三方检验报告</p>
+        </div>
+        <div class="col-md-4 text-end">
+          <a href="contact.html" class="btn btn-outline-primary">询价 Inquiry</a>
         </div>
       </div>
     </div>
@@ -291,6 +337,40 @@
           ✓ 设备选型指导：推荐最适合的品牌和型号<br>
           ✓ 安装调试服务：专业工程师上门安装部署<br>
           ✓ 售后运维支持：7×24小时响应，终身维护</p>
+        </div>
+        <div class="col-md-4 text-end">
+          <a href="contact.html" class="btn btn-outline-primary">询价 Inquiry</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="ppe" class="product-section">
+      <h3 class="mb-4"><img src="images/categories/ppe_small.jpg" style="width:32px;height:32px;object-fit:cover;border-radius:4px;vertical-align:middle;margin-right:8px;">劳防用品 Personal Protective Equipment (PPE)</h3>
+      <div class="row">
+        <div class="col-md-8">
+          <h5>产品概述 Product Overview</h5>
+          <p>劳防用品是保护劳动者在生产作业中免受职业伤害的个人防护装备。我们提供从头到脚的全系列防护产品，涵盖头部防护、面部防护、呼吸防护、手部防护、足部防护、身体防护等，满足工业生产、建筑施工、实验室操作等多种场景的安规要求。</p>
+          
+          <h5 class="mt-3">产品系列 Product Series</h5>
+          <ul>
+            <li><strong>安全帽 Safety Helmets：</strong>ABS安全帽、PE安全帽、玻璃钢安全帽，透气孔设计，防冲击、防穿刺，符合GB 2811标准，有白/黄/红/蓝/橙多色可选</li>
+            <li><strong>安全鞋 Safety Shoes：</strong>防砸、防刺穿、防滑、防静电、耐油、耐酸碱多功能安全鞋，鞋头采用钢包头或复合材料包头，PU/橡胶底，适合工厂车间和建筑工地</li>
+            <li><strong>防护手套 Protective Gloves：</strong>乳胶手套、尼龙手套、PU手套、焊工手套、防切割手套、耐高温手套、防静电手套，规格齐全，防护等级高</li>
+            <li><strong>护目镜/防护面罩 Safety Goggles & Face Shields：</strong>防飞溅护目镜、防蓝光眼镜、防雾面罩、焊接面罩，镜片采用聚碳酸酯材质，透光率高，抗冲击</li>
+            <li><strong>防护服/工作服 Protective Clothing：</strong>防静电服、防酸碱服、阻燃服、防寒服、手术服、一次性防护服，材质有棉、涤棉、覆膜无纺布多种选择</li>
+            <li><strong>呼吸防护 Respiratory Protection：</strong>一次性口罩、N95/KN95口罩、防毒面具、滤毒盒、长管呼吸器，适合粉尘、毒气、蒸汽等危害环境</li>
+            <li><strong>坠落防护 Fall Protection：</strong>安全带、安全绳、缓冲带、安全钩、水平生命线，适用于高空作业和脚手架作业</li>
+            <li><strong>其他防护 Other PPE：</strong>耳塞/耳罩、降噪帽、防护围裙、袖套、反光背心，满足特定行业需求</li>
+          </ul>
+
+          <h5 class="mt-3">应用领域 Applications</h5>
+          <p>工厂生产 | 建筑施工 | 焊接作业 | 实验室操作 | 医疗防护 | 物流仓储 | 油漆喷涂 | 电力维修</p>
+
+          <h5 class="mt-3">认证与质量 Certifications & Quality</h5>
+          <p>✓ 产品符合GB、EN、ANSI等国家标准和行业标准<br>
+          ✓ 特种劳防用品提供LA认证和检测报告<br>
+          ✓ 可为客户定制劳防用品方案，搭配推荐最优组合<br>
+          ✓ 长期为多家知名企业提供团购配套服务</p>
         </div>
         <div class="col-md-4 text-end">
           <a href="contact.html" class="btn btn-outline-primary">询价 Inquiry</a>
