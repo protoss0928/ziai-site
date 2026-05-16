@@ -11,49 +11,27 @@
         body{font-family:'Microsoft YaHei',Arial,sans-serif;background:var(--bg);color:var(--text)}
         .navbar{background:var(--primary)!important}
         .navbar-brand{font-weight:bold;font-size:1.4rem}
-        .section{padding:60px 0}
-        .section-title{text-align:center;margin-bottom:40px;color:var(--primary);font-weight:700;font-size:1.8rem}
-        .section-title span{display:block;font-size:1rem;color:#666;font-weight:400;margin-top:5px}
+        .hero{background:linear-gradient(135deg,var(--primary),var(--secondary));color:white;padding:120px 0 80px}
+        .hero h1{font-size:2.8rem;font-weight:bold}
+        .section{padding:50px 0}
+        .section-title{text-align:center;margin-bottom:30px;color:var(--primary);font-weight:600}
         .section-title:after{content:'';display:block;width:60px;height:4px;background:var(--accent);margin:15px auto 0}
-        .value-icon{width:80px;height:80px;background:linear-gradient(135deg,var(--primary),var(--secondary));border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;margin:0 auto;box-shadow:0 4px 15px rgba(0,94,184,0.3)}
-        footer{background:var(--primary);color:white;padding:40px 0}
-        .cat-card{background:white;padding:20px 15px;border-radius:12px;box-shadow:0 2px 15px rgba(0,0,0,0.08);transition:all .3s;cursor:pointer;margin-bottom:15px;border:2px solid transparent}
-        .cat-card:hover{transform:translateY(-5px);box-shadow:0 8px 25px rgba(0,0,0,0.15);border-color:var(--accent)}
-        .cat-icon{font-size:2.5rem;color:var(--primary);margin-bottom:15px}
-        .lang-switch{position:absolute;right:20px;top:15px;background:rgba(255,255,255,0.2);border:1px solid rgba(255,255,255,0.5);color:white;padding:5px 15px;border-radius:20px;cursor:pointer;text-decoration:none}
-        .lang-switch:hover{background:rgba(255,255,255,0.3);color:white}
-        /* Hero Carousel */
-        .hero-carousel{position:relative;height:520px;overflow:hidden}
-        .hero-slide{position:absolute;width:100%;height:100%;opacity:0;transition:opacity 1s ease-in-out}
-        .hero-slide.active{opacity:1}
-        .hero-slide-bg{position:absolute;width:100%;height:100%;background-size:cover;background-position:center;filter:brightness(0.5)}
-        .hero-slide-content{position:relative;z-index:10;height:100%;display:flex;align-items:center;justify-content:center;text-align:center;color:white}
-        .hero-slide-content h1{font-size:3rem;font-weight:800;text-shadow:2px 2px 10px rgba(0,0,0,0.5);margin-bottom:15px}
-        .hero-slide-content p{font-size:1.3rem;opacity:0.95;text-shadow:1px 1px 5px rgba(0,0,0,0.5);max-width:600px;margin:0 auto}
-        .hero-slide-content .badge{background:var(--accent);color:white;padding:8px 20px;border-radius:25px;font-size:1rem;margin-top:20px}
-        .carousel-indicators{position:absolute;bottom:30px;left:50%;transform:translateX(-50%);display:flex;gap:10px;z-index:20}
-        .carousel-dot{width:12px;height:12px;border-radius:50%;background:rgba(255,255,255,0.5);cursor:pointer;transition:all .3s;border:none}
-        .carousel-dot.active{background:var(--accent);transform:scale(1.2)}
-        .carousel-nav{position:absolute;top:50%;transform:translateY(-50%);z-index:20;background:rgba(255,255,255,0.2);border:none;color:white;font-size:2rem;width:50px;height:50px;border-radius:50%;cursor:pointer;transition:all .3s;display:flex;align-items:center;justify-content:center}
-        .carousel-nav:hover{background:var(--accent)}
-        .carousel-nav.prev{left:20px}
-        .carousel-nav.next{right:20px}
-        /* Product Cards */
         .product-card{transition:transform .2s;cursor:pointer;border:none;box-shadow:0 2px 10px rgba(0,0,0,.1);height:100%}
         .product-card:hover{transform:translateY(-5px)}
         .product-card img{height:180px;object-fit:cover}
-        /* Stats */
-        .stat-number{font-size:3rem;font-weight:800;color:var(--primary);line-height:1}
-        .stat-label{font-size:1rem;color:#666}
-        /* Partner Logos */
-        .partner-logo{height:60px;object-fit:contain;filter:grayscale(100%);opacity:0.7;transition:all .3s}
-        .partner-logo:hover{filter:grayscale(0%);opacity:1}
-        /* CTA */
-        .cta-section{background:linear-gradient(135deg,var(--primary),var(--secondary));color:white;padding:80px 0}
-        .btn-accent{background:var(--accent);color:white;padding:12px 30px;border-radius:25px;font-weight:600;border:none;transition:all .3s}
-        .btn-accent:hover{background:#e68a00;color:white;transform:translateY(-2px)}
-        .btn-outline-white{background:transparent;color:white;border:2px solid white;padding:12px 30px;border-radius:25px;font-weight:600;transition:all .3s}
-        .btn-outline-white:hover{background:white;color:var(--primary)}
+        .value-icon{width:80px;height:80px;background:var(--primary);border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;margin:0 auto}
+        footer{background:var(--primary);color:white;padding:40px 0}
+        .cat-card{background:white;padding:15px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,.08);transition:all .2s;cursor:pointer;margin-bottom:10px}
+        .cat-card:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.12)}
+        .cat-icon{font-size:3rem;color:var(--primary);margin-bottom:20px}
+        .lang-switch{position:absolute;right:20px;top:15px;background:rgba(255,255,255,0.2);border:1px solid rgba(255,255,255,0.5);color:white;padding:5px 15px;border-radius:20px;cursor:pointer;text-decoration:none}
+        .lang-switch:hover{background:rgba(255,255,255,0.3);color:white}
+        .page-header{background:linear-gradient(135deg,var(--primary),var(--secondary));color:white;padding:100px 0 60px;text-align:center}
+        .page-header h1{font-size:2.5rem;font-weight:bold}
+        .breadcrumb{background:transparent;padding:0}
+        .breadcrumb-item{color:rgba(255,255,255,0.8)}
+        .breadcrumb-item a{color:white}
+        .breadcrumb-item.active{color:rgba(255,255,255,0.6)}
     </style>
 </head>
 <body>
@@ -67,272 +45,137 @@
         <li class="nav-item"><a class="nav-link" href="about.html">关于我们</a></li>
         <li class="nav-item"><a class="nav-link" href="products.html">产品中心</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">联系我们</a></li>
+        <li class="nav-item"><a class="nav-link" href="admin.html"><i class="bi bi-gear"></i> 维护</a></li>
       </ul>
       <a href="en/" class="lang-switch">EN</a>
     </div>
   </div>
 </nav>
 
-<!-- Hero Carousel -->
-<div class="hero-carousel" id="heroCarousel">
-    <!-- Slide 1 -->
-    <div class="hero-slide active">
-        <div class="hero-slide-bg" style="background-image:linear-gradient(135deg,rgba(0,94,184,0.85),rgba(0,48,135,0.9)),url('images/warehouse1.jpg')"></div>
-        <div class="hero-slide-content">
-            <div>
-                <h1>专业工业品供应商</h1>
-                <p>Shanghai Zi'Ai Industrial Co., Ltd.<br>一站式工业品采购平台</p>
-                <span class="badge">10+年行业经验 | 200+稳定客户</span>
-            </div>
-        </div>
-    </div>
-    <!-- Slide 2 -->
-    <div class="hero-slide">
-        <div class="hero-slide-bg" style="background-image:linear-gradient(135deg,rgba(0,94,184,0.85),rgba(0,48,135,0.9)),url('images/logistics.jpg')"></div>
-        <div class="hero-slide-content">
-            <div>
-                <h1>全球物流支持</h1>
-                <p>Global Logistics Support<br>覆盖20+国家与地区</p>
-                <span class="badge">国际快递 | 海运空运 | 一单到底</span>
-            </div>
-        </div>
-    </div>
-    <!-- Slide 3 -->
-    <div class="hero-slide">
-        <div class="hero-slide-bg" style="background-image:linear-gradient(135deg,rgba(0,94,184,0.85),rgba(0,48,135,0.9)),url('images/industrial.jpg')"></div>
-        <div class="hero-slide-content">
-            <div>
-                <h1>品质保障 · ISO认证</h1>
-                <p>Quality Assurance · ISO Certified<br>ISO 9001质量管理体系认证</p>
-                <span class="badge">源头厂家 | 品质可控</span>
-            </div>
-        </div>
-    </div>
-    <!-- Slide 4 -->
-    <div class="hero-slide">
-        <div class="hero-slide-bg" style="background-image:linear-gradient(135deg,rgba(0,94,184,0.85),rgba(0,48,135,0.9)),url('images/factory.jpg')"></div>
-        <div class="hero-slide-content">
-            <div>
-                <h1>一站式采购解决方案</h1>
-                <p>One-Stop Procurement Solution<br>8大产品线 · 10大产品类别</p>
-                <span class="badge">降低成本 | 提高效率</span>
-            </div>
-        </div>
-    </div>
-    <!-- Indicators -->
-    <div class="carousel-indicators">
-        <button class="carousel-dot active" data-slide="0"></button>
-        <button class="carousel-dot" data-slide="1"></button>
-        <button class="carousel-dot" data-slide="2"></button>
-        <button class="carousel-dot" data-slide="3"></button>
-    </div>
-    <!-- Nav -->
-    <button class="carousel-nav prev" onclick="changeSlide(-1)"><i class="bi bi-chevron-left"></i></button>
-    <button class="carousel-nav next" onclick="changeSlide(1)"><i class="bi bi-chevron-right"></i></button>
-</div>
-
-<!-- Core Values -->
-<div class="section">
-  <div class="container">
-    <h2 class="section-title">核心价值主张<span>Core Value Proposition</span></h2>
-    <div class="row g-4">
-      <div class="col-md-4 col-sm-6 text-center">
-        <div class="value-icon mb-3"><i class="bi bi-box-seam"></i></div>
-        <h5 style="font-weight:600">丰富产品线</h5>
-        <p class="text-muted mb-1">Diverse Product Range</p>
-        <p class="small text-muted">10大产品类别 · 8条产品线</p>
-      </div>
-      <div class="col-md-4 col-sm-6 text-center">
-        <div class="value-icon mb-3"><i class="bi bi-cart-check"></i></div>
-        <h5 style="font-weight:600">一站式采购</h5>
-        <p class="text-muted mb-1">One-Stop Procurement</p>
-        <p class="small text-muted">降低成本 · 提高效率</p>
-      </div>
-      <div class="col-md-4 col-sm-6 text-center">
-        <div class="value-icon mb-3"><i class="bi bi-shield-check"></i></div>
-        <h5 style="font-weight:600">ISO品质认证</h5>
-        <p class="text-muted mb-1">ISO 9001 Certified</p>
-        <p class="small text-muted">源头品控 · 品质保障</p>
-      </div>
-      <div class="col-md-4 col-sm-6 text-center">
-        <div class="value-icon mb-3"><i class="bi bi-truck"></i></div>
-        <h5 style="font-weight:600">全球物流支持</h5>
-        <p class="text-muted mb-1">Global Logistics Support</p>
-        <p class="small text-muted">覆盖20+国家与地区</p>
-      </div>
-      <div class="col-md-4 col-sm-6 text-center">
-        <div class="value-icon mb-3"><i class="bi bi-headset"></i></div>
-        <h5 style="font-weight:600">专业技术支持</h5>
-        <p class="text-muted mb-1">Professional Support</p>
-        <p class="small text-muted">7×24小时在线服务</p>
-      </div>
-      <div class="col-md-4 col-sm-6 text-center">
-        <div class="value-icon mb-3"><i class="bi bi-handshake"></i></div>
-        <h5 style="font-weight:600">长期稳定合作</h5>
-        <p class="text-muted mb-1">Long-Term Partnership</p>
-        <p class="small text-muted">200+稳定客户信赖</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Product Categories - 10 Categories -->
-<div class="section bg-white">
-  <div class="container">
-    <h2 class="section-title">10大产品类别<span>10 Product Categories</span></h2>
-    <div class="row g-4">
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="cat-card text-center" onclick="location.href='products.html#hardware'">
-          <div class="cat-icon"><i class="bi bi-tools"></i></div>
-          <h6 style="font-size:1rem;font-weight:600;margin-bottom:5px">五金标准件</h6>
-          <small class="text-muted">Hardware & Fasteners</small>
-          <p class="small text-muted mt-2 mb-0">螺栓/螺母/螺丝/垫圈</p>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="cat-card text-center" onclick="location.href='products.html#fasteners'">
-          <div class="cat-icon"><i class="bi bi-pin"></i></div>
-          <h6 style="font-size:1rem;font-weight:600;margin-bottom:5px">紧固件</h6>
-          <small class="text-muted">Industrial Fasteners</small>
-          <p class="small text-muted mt-2 mb-0">紧固连接解决方案</p>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="cat-card text-center" onclick="location.href='products.html#sealing'">
-          <div class="cat-icon"><i class="bi bi-droplet-half"></i></div>
-          <h6 style="font-size:1rem;font-weight:600;margin-bottom:5px">密封件</h6>
-          <small class="text-muted">Sealing Components</small>
-          <p class="small text-muted mt-2 mb-0">O型圈/油封/密封垫</p>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="cat-card text-center" onclick="location.href='products.html#ppe'">
-          <div class="cat-icon"><i class="bi bi-shield-plus"></i></div>
-          <h6 style="font-size:1rem;font-weight:600;margin-bottom:5px">劳防用品</h6>
-          <small class="text-muted">PPE & Safety</small>
-          <p class="small text-muted mt-2 mb-0">安全帽/手套/护目镜</p>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="cat-card text-center" onclick="location.href='products.html#nameplate'">
-          <div class="cat-icon"><i class="bi bi-tag"></i></div>
-          <h6 style="font-size:1rem;font-weight:600;margin-bottom:5px">工艺铭牌</h6>
-          <small class="text-muted">Industrial Nameplates</small>
-          <p class="small text-muted mt-2 mb-0">标识标牌/铭牌定制</p>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="cat-card text-center" onclick="location.href='products.html#tools'">
-          <div class="cat-icon"><i class="bi bi-wrench"></i></div>
-          <h6 style="font-size:1rem;font-weight:600;margin-bottom:5px">工具量具</h6>
-          <small class="text-muted">Tools & Measuring</small>
-          <p class="small text-muted mt-2 mb-0">扳手/螺丝刀/卡尺</p>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="cat-card text-center" onclick="location.href='products.html#electronics'">
-          <div class="cat-icon"><i class="bi bi-cpu"></i></div>
-          <h6 style="font-size:1rem;font-weight:600;margin-bottom:5px">电子产品</h6>
-          <small class="text-muted">Electronics & IT</small>
-          <p class="small text-muted mt-2 mb-0">电脑/配件/网络设备</p>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="cat-card text-center" onclick="location.href='products.html#av'">
-          <div class="cat-icon"><i class="bi bi-camera-video"></i></div>
-          <h6 style="font-size:1rem;font-weight:600;margin-bottom:5px">视频/音频/会议</h6>
-          <small class="text-muted">Video/Audio/Conference</small>
-          <p class="small text-muted mt-2 mb-0">会议系统/音响设备</p>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="cat-card text-center" onclick="location.href='products.html#office'">
-          <div class="cat-icon"><i class="bi bi-building"></i></div>
-          <h6 style="font-size:1rem;font-weight:600;margin-bottom:5px">办公用品</h6>
-          <small class="text-muted">Office Supplies</small>
-          <p class="small text-muted mt-2 mb-0">文具/打印/耗材</p>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="cat-card text-center" onclick="location.href='products.html#shelves'">
-          <div class="cat-icon"><i class="bi bi-box"></i></div>
-          <h6 style="font-size:1rem;font-weight:600;margin-bottom:5px">货架展架</h6>
-          <small class="text-muted">Shelves & Display</small>
-          <p class="small text-muted mt-2 mb-0">仓储货架/展示架</p>
-        </div>
-      </div>
-    </div>
-    <div class="text-center mt-4">
-      <a href="products.html" class="btn btn-primary px-4 py-2" style="border-radius:25px">
-        查看全部产品 <i class="bi bi-arrow-right ms-2"></i>
-      </a>
-    </div>
-  </div>
-</div>
-
-<!-- Why Choose Us - Stats (P1) -->
-<div class="section">
-  <div class="container">
-    <h2 class="section-title">为什么选择我们<span>Why Choose Us</span></h2>
-    <div class="row g-4 text-center">
-      <div class="col-6 col-md-3">
-        <div class="stat-number">10+</div>
-        <div class="stat-label">年行业经验</div>
-        <small class="text-muted">Years Experience</small>
-      </div>
-      <div class="col-6 col-md-3">
-        <div class="stat-number">200+</div>
-        <div class="stat-label">稳定客户</div>
-        <small class="text-muted">Satisfied Clients</small>
-      </div>
-      <div class="col-6 col-md-3">
-        <div class="stat-number">10</div>
-        <div class="stat-label">产品类别</div>
-        <small class="text-muted">Product Categories</small>
-      </div>
-      <div class="col-6 col-md-3">
-        <div class="stat-number">20+</div>
-        <div class="stat-label">国家地区</div>
-        <small class="text-muted">Countries Served</small>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Partners Logo Wall (P1) -->
-<div class="section bg-white">
-  <div class="container">
-    <h2 class="section-title">合作伙伴<span>Our Partners</span></h2>
-    <div class="row g-4 justify-content-center align-items-center">
-      <div class="col-4 col-md-2 text-center">
-        <div class="p-3 bg-light rounded"><i class="bi bi-building" style="font-size:2.5rem;color:#666"></i><p class="small text-muted mt-2 mb-0">制造业</p></div>
-      </div>
-      <div class="col-4 col-md-2 text-center">
-        <div class="p-3 bg-light rounded"><i class="bi bi-truck" style="font-size:2.5rem;color:#666"></i><p class="small text-muted mt-2 mb-0">物流</p></div>
-      </div>
-      <div class="col-4 col-md-2 text-center">
-        <div class="p-3 bg-light rounded"><i class="bi bi-hospital" style="font-size:2.5rem;color:#666"></i><p class="small text-muted mt-2 mb-0">医疗</p></div>
-      </div>
-      <div class="col-4 col-md-2 text-center">
-        <div class="p-3 bg-light rounded"><i class="bi bi-tools" style="font-size:2.5rem;color:#666"></i><p class="small text-muted mt-2 mb-0">工程</p></div>
-      </div>
-      <div class="col-4 col-md-2 text-center">
-        <div class="p-3 bg-light rounded"><i class="bi bi-pc-display" style="font-size:2.5rem;color:#666"></i><p class="small text-muted mt-2 mb-0">科技</p></div>
-      </div>
-      <div class="col-4 col-md-2 text-center">
-        <div class="p-3 bg-light rounded"><i class="bi bi-box-seam" style="font-size:2.5rem;color:#666"></i><p class="small text-muted mt-2 mb-0">贸易</p></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- CTA Section (P1) -->
-<div class="cta-section">
+<div class="hero">
   <div class="container text-center">
-    <h2 style="font-size:2rem;font-weight:700;margin-bottom:15px">开始您的采购之旅</h2>
-    <p style="font-size:1.1rem;opacity:0.9;margin-bottom:30px">Start Your Procurement Journey<br>一站式工业品采购解决方案，随时为您服务</p>
-    <a href="contact.html" class="btn btn-accent me-3 px-4 py-2"><i class="bi bi-chat-dots me-2"></i>联系我们</a>
-    <a href="products.html" class="btn btn-outline-white px-4 py-2"><i class="bi bi-box-seam me-2"></i>浏览产品</a>
+    <h1 style="font-size:2rem">专业工业品供应商</h1>
+    <p class="lead" style="font-size:1.1rem">Shanghai Zi'Ai Industrial Co., Ltd.</p>
+    <p class="mb-3">上海子爱实业有限公司</p>
+    <a href="products.html" class="btn btn-primary mt-2">浏览产品</a>
+  </div>
+</div>
+
+<div class="section">
+  <div class="container">
+    <h2 class="section-title">8大产品类别 8 Product Categories</h2>
+    <div class="row g-4">
+      <div class="col-md-3 col-6">
+        <div class="cat-card" onclick="location.href='products.html#hardware'">
+          <div class="d-flex align-items-center">
+            <img src="images/categories/hardware_small.jpg" style="width:50px;height:50px;object-fit:cover;border-radius:6px;margin-right:10px;" alt="hardware">
+            <h6 style="font-size:0.95rem;margin-bottom:2px">五金标准件</h6><small class="text-muted">Hardware Standard Parts</small>
+            <i class="bi bi-chevron-right ms-auto text-muted"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="cat-card" onclick="location.href='products.html#sealing'">
+          <div class="d-flex align-items-center">
+            <img src="images/categories/sealing_small.jpg" style="width:50px;height:50px;object-fit:cover;border-radius:6px;margin-right:10px;" alt="sealing">
+            <h6 style="font-size:0.95rem;margin-bottom:2px">密封件</h6><small class="text-muted">Sealing Components</small>
+            <i class="bi bi-chevron-right ms-auto text-muted"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="cat-card" onclick="location.href='products.html#nameplate'">
+          <div class="d-flex align-items-center">
+            <img src="images/categories/nameplate_small.jpg" style="width:50px;height:50px;object-fit:cover;border-radius:6px;margin-right:10px;" alt="nameplate">
+            <h6 style="font-size:0.95rem;margin-bottom:2px">工艺铭牌</h6><small class="text-muted">Industrial Nameplates</small>
+            <i class="bi bi-chevron-right ms-auto text-muted"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="cat-card" onclick="location.href='products.html#tools'">
+          <div class="d-flex align-items-center">
+            <img src="images/categories/tools_small.jpg" style="width:50px;height:50px;object-fit:cover;border-radius:6px;margin-right:10px;" alt="tools">
+            <h6 style="font-size:0.95rem;margin-bottom:2px">工具量具</h6><small class="text-muted">Tools & Measuring</small>
+            <i class="bi bi-chevron-right ms-auto text-muted"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="cat-card" onclick="location.href='products.html#electronics'">
+          <div class="d-flex align-items-center">
+            <img src="images/categories/electronics_small.jpg" style="width:50px;height:50px;object-fit:cover;border-radius:6px;margin-right:10px;" alt="electronics">
+            <h6 style="font-size:0.95rem;margin-bottom:2px">电子产品</h6><small class="text-muted">Electronics & IT</small>
+            <i class="bi bi-chevron-right ms-auto text-muted"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="cat-card" onclick="location.href='products.html#av'">
+          <div class="d-flex align-items-center">
+            <img src="images/categories/av_small.jpg" style="width:50px;height:50px;object-fit:cover;border-radius:6px;margin-right:10px;" alt="av">
+            <h6 style="font-size:0.95rem;margin-bottom:2px">视频/音频/会议</h6><small class="text-muted">Video/Audio/Conference</small>
+            <i class="bi bi-chevron-right ms-auto text-muted"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="cat-card" onclick="location.href='products.html#office'">
+          <div class="d-flex align-items-center">
+            <img src="images/categories/office_small.jpg" style="width:50px;height:50px;object-fit:cover;border-radius:6px;margin-right:10px;" alt="office">
+            <h6 style="font-size:0.95rem;margin-bottom:2px">办公用品</h6><small class="text-muted">Office Supplies</small>
+            <i class="bi bi-chevron-right ms-auto text-muted"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="cat-card" onclick="location.href='products.html#shelves'">
+          <div class="d-flex align-items-center">
+            <img src="images/categories/shelves_small.jpg" style="width:50px;height:50px;object-fit:cover;border-radius:6px;margin-right:10px;" alt="shelves">
+            <h6 style="font-size:0.95rem;margin-bottom:2px">货架展架</h6><small class="text-muted">Shelves & Display</small>
+            <i class="bi bi-chevron-right ms-auto text-muted"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section bg-white">
+  <div class="container">
+    <h2 class="section-title">核心优势 Core Strengths</h2>
+    <div class="row g-4">
+      <div class="col-md-4 text-center">
+        <div class="value-icon mb-3">🔧</div>
+        <h5>丰富产品线</h5>
+        <p class="text-muted">Diverse Product Range</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="value-icon mb-3">📦</div>
+        <h5>一站式采购</h5>
+        <p class="text-muted">One-Stop Procurement</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="value-icon mb-3">🏭</div>
+        <h5>ISO品质认证</h5>
+        <p class="text-muted">ISO 9001 Certified</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="value-icon mb-3">🚢</div>
+        <h5>全球物流支持</h5>
+        <p class="text-muted">Global Logistics</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="value-icon mb-3">💬</div>
+        <h5>专业技术支持</h5>
+        <p class="text-muted">Professional Support</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="value-icon mb-3">🤝</div>
+        <h5>长期稳定合作</h5>
+        <p class="text-muted">Long-Term Partnership</p>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -345,48 +188,5 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-// Hero Carousel
-let currentSlide = 0;
-const slides = document.querySelectorAll('.hero-slide');
-const dots = document.querySelectorAll('.carousel-dot');
-const totalSlides = slides.length;
-
-function showSlide(index) {
-    slides.forEach((s, i) => {
-        s.classList.toggle('active', i === index);
-    });
-    dots.forEach((d, i) => {
-        d.classList.toggle('active', i === index);
-    });
-}
-
-function changeSlide(direction) {
-    currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
-    showSlide(currentSlide);
-}
-
-dots.forEach((dot, index) => {
-    dot.addEventListener('click', () => {
-        currentSlide = index;
-        showSlide(currentSlide);
-    });
-});
-
-// Auto-advance every 5 seconds
-setInterval(() => {
-    changeSlide(1);
-}, 5000);
-
-// Navbar scroll effect
-window.addEventListener('scroll', () => {
-    const navbar = document.querySelector('.navbar');
-    if (window.scrollY > 50) {
-        navbar.style.boxShadow = '0 2px 10px rgba(0,0,0,0.2)';
-    } else {
-        navbar.style.boxShadow = 'none';
-    }
-});
-</script>
 </body>
 </html>

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网站维护指南 | Website Maintenance Guide - 上海子爱实业</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        :root{--primary:#005EB8;--secondary:#003087;--accent:#FF9900;--bg:#F5F7FA;--text:#222}
+        body{font-family:'Microsoft YaHei',Arial,sans-serif;background:var(--bg);color:var(--text)}
+        .navbar{background:var(--primary)!important}
+        .section{padding:60px 0}
+        .section-title{text-align:center;margin-bottom:40px;color:var(--primary);font-weight:700;font-size:1.8rem}
+        .section-title span{display:block;font-size:1rem;color:#666;font-weight:400;margin-top:5px}
+        .section-title:after{content:'';display:block;width:60px;height:4px;background:var(--accent);margin:15px auto 0}
+        .admin-card{background:white;padding:30px;border-radius:12px;box-shadow:0 2px 15px rgba(0,0,0,0.08);margin-bottom:20px}
+        .admin-card h4{color:var(--primary);margin-bottom:15px}
+        .step-number{width:40px;height:40px;background:var(--primary);color:white;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-weight:700;font-size:1.2rem}
+        .code-block{background:#2d2d2d;color:#f8f8f2;padding:15px;border-radius:8px;font-family:'Consolas','Monaco',monospace;font-size:0.9rem;overflow-x:auto}
+        .code-block .comment{color:#75715e}
+        .code-block .keyword{color:#66d9ef}
+        .code-block .string{color:#e6db74}
+        .warning-box{background:#fff3cd;border:1px solid #ffc107;border-radius:8px;padding:15px;margin:15px 0}
+        .info-box{background:#d1ecf1;border:1px solid #0dcaf0;border-radius:8px;padding:15px;margin:15px 0}
+        .success-box{background:#d4edda;border:1px solid #28a745;border-radius:8px;padding:15px;margin:15px 0}
+        footer{background:var(--primary);color:white;padding:40px 0}
+        .nav-link{color:rgba(255,255,255,0.8)!important}
+        .nav-link:hover{color:white!important}
+        .lang-switch{background:rgba(255,255,255,0.2);border:1px solid rgba(255,255,255,0.5);color:white;padding:5px 15px;border-radius:20px;text-decoration:none}
+        .lang-switch:hover{background:rgba(255,255,255,0.3);color:white}
+        .version-info{background:var(--primary);color:white;padding:15px 25px;border-radius:8px;display:inline-block;margin-bottom:20px}
+        .toc-card{background:white;padding:20px;border-radius:8px;border-left:4px solid var(--accent)}
+        .toc-card a{text-decoration:none;color:var(--text)}
+        .toc-card a:hover{color:var(--primary)}
+        .page-header{background:linear-gradient(135deg,var(--primary),var(--secondary));color:white;padding:80px 0 40px;text-align:center}
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><img src="images/logo.png" height="32" style="background:white;border-radius:4px;padding:2px 6px"> 子爱实业</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">返回首页</a></li>
+        <li class="nav-item"><a class="nav-link" href="admin.html">维护指南</a></li>
+        <li class="nav-item"><a class="nav-link" href="versions.html">版本历史</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="page-header">
+    <div class="container">
+        <h2 class="mb-2"><i class="bi bi-gear me-2"></i>网站维护指南</h2>
+        <p class="mb-0 opacity-75">Website Maintenance Guide</p>
+    </div>
+</div>
+
+<div class="section">
+  <div class="container">
+    <div class="row">
+        <!-- Table of Contents -->
+        <div class="col-lg-3">
+            <div class="toc-card sticky-top" style="top:80px">
+                <h6 class="mb-3"><i class="bi bi-list-ul me-2"></i>目录</h6>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#overview">1. 概述</a></li>
+                    <li class="mb-2"><a href="#file-structure">2. 文件结构</a></li>
+                    <li class="mb-2"><a href="#edit-pages">3. 编辑页面</a></li>
+                    <li class="mb-2"><a href="#update-content">4. 更新内容</a></li>
+                    <li class="mb-2"><a href="#deploy">5. 发布网站</a></li>
+                    <li class="mb-2"><a href="#rollback">6. 版本回滚</a></li>
+                    <li class="mb-2"><a href="#troubleshooting">7. 常见问题</a></li>
+                </ul>
+                <hr>
+                <a href="versions.html" class="btn btn-outline-primary btn-sm w-100">
+                    <i class="bi bi-clock-history me-1"></i>查看版本历史
+                </a>
+            </div>
+        </div>
+        
+        <!-- Content -->
+        <div class="col-lg-9">
+            
+            <!-- Overview -->
+            <div class="admin-card" id="overview">
+                <h4><i class="bi bi-book me-2"></i>1. 概述</h4>
+                <p>本指南帮助非技术人员维护和更新上海子爱实业海外独立站。网站采用静态HTML技术，无需数据库，简单易维护。</p>
+                
+                <div class="info-box">
+                    <strong><i class="bi bi-lightbulb me-1"></i>提示：</strong>
+                    网站文件位于服务器目录 <code>/root/.openclaw/agents/protoss0928/website/ziai-site/</code>
+                </div>
+                
+                <h6 class="mt-4">需要的技术技能：</h6>
+                <ul>
+                    <li>基本的电脑操作能力</li>
+                    <li>简单的文字编辑（使用文本编辑器如 VS Code、Notepad++）</li>
+                    <li>复制粘贴能力</li>
+                </ul>
+                
+                <h6 class="mt-4">维护内容：</h6>
+                <ul>
+                    <li>更新产品价格和信息</li>
+                    <li>修改公司介绍内容</li>
+                    <li>添加新产品或分类</li>
+                    <li>更新联系方式</li>
+                    <li>更换图片素材</li>
+                </ul>
+            </div>
+            
+            <!-- File Structure -->
+            <div class="admin-card" id="file-structure">
+                <h4><i class="bi bi-folder me-2"></i>2. 文件结构</h4>
+                <p>网站文件结构清晰，每个页面都是独立的HTML文件：</p>
+                
+                <div class="code-block">
+website/ziai-site/
+├── index.html          <span class="comment">← 首页</span>
+├── about.html          <span class="comment">← 关于我们</span>
+├── products.html       <span class="comment">← 产品中心</span>
+├── contact.html        <span class="comment">← 联系我们</span>
+├── admin.html          <span class="comment">← 本维护指南（勿删除）</span>
+├── versions.html       <span class="comment">← 版本历史页面</span>
+├── en/                 <span class="comment">← 英文版页面</span>
+│   ├── index.html
+│   ├── about.html
+│   ├── products.html
+│   └── contact.html
+└── images/             <span class="comment">← 图片资源</span>
+    ├── logo.png
+    ├── products/
+    └── ...
+                </div>
+                
+                <div class="warning-box">
+                    <strong><i class="bi bi-exclamation-triangle me-1"></i>重要：</strong>
+                    修改前请务必备份原文件。每次修改会自动生成版本快照，可随时回滚。
+                </div>
+            </div>
+            
+            <!-- Edit Pages -->
+            <div class="admin-card" id="edit-pages">
+                <h4><i class="bi bi-pencil me-2"></i>3. 编辑页面</h4>
+                
+                <h6 class="mt-3">3.1 使用文本编辑器</h6>
+                <p>推荐使用以下编辑器之一：</p>
+                <ul>
+                    <li><strong>VS Code</strong>（推荐）- 免费，功能强大</li>
+                    <li><strong>Notepad++</strong> - 轻量级，适合初学者</li>
+                    <li><strong>Sublime Text</strong> - 速度快</li>
+                </ul>
+                
+                <h6 class="mt-4">3.2 编辑步骤</h6>
+                <div class="d-flex flex-wrap gap-3 my-3">
+                    <span class="step-number">1</span>
+                    <div class="flex-grow-1">
+                        <strong>打开文件</strong>
+                        <p class="mb-0 text-muted small">用文本编辑器打开要修改的HTML文件</p>
+                    </div>
+                </div>
+                <div class="d-flex flex-wrap gap-3 my-3">
+                    <span class="step-number">2</span>
+                    <div class="flex-grow-1">
+                        <strong>找到要修改的内容</strong>
+                        <p class="mb-0 text-muted small">使用 Ctrl+F 搜索关键词定位</p>
+                    </div>
+                </div>
+                <div class="d-flex flex-wrap gap-3 my-3">
+                    <span class="step-number">3</span>
+                    <div class="flex-grow-1">
+                        <strong>修改内容</strong>
+                        <p class="mb-0 text-muted small">直接编辑文字，不要修改HTML标签（如 &lt;h1&gt;, &lt;p&gt;, &lt;div&gt; 等）</p>
+                    </div>
+                </div>
+                <div class="d-flex flex-wrap gap-3 my-3">
+                    <span class="step-number">4</span>
+                    <div class="flex-grow-1">
+                        <strong>保存文件</strong>
+                        <p class="mb-0 text-muted small">按 Ctrl+S 保存修改</p>
+                    </div>
+                </div>
+                
+                <div class="info-box mt-4">
+                    <strong><i class="bi bi-translate me-1"></i>中英文同步：</strong>
+                    网站有中文版和英文版两个版本。修改中文内容后，请同步修改 <code>en/</code> 文件夹下对应的英文版本。
+                </div>
+            </div>
+            
+            <!-- Update Content -->
+            <div class="admin-card" id="update-content">
+                <h4><i class="bi bi-arrow-repeat me-2"></i>4. 更新内容</h4>
+                
+                <h6 class="mt-3">4.1 更新产品信息</h6>
+                <p>打开 <code>products.html</code>，找到对应的产品分类，使用 Ctrl+F 搜索产品名称。</p>
+                
+                <h6 class="mt-4">产品卡片结构示例：</h6>
+                <div class="code-block">
+&lt;div class="col-md-4 mb-4"&gt;
+    &lt;div class="card product-card"&gt;
+        &lt;img src="images/products/your-product.jpg" alt="产品名称"&gt;
+        &lt;div class="card-body"&gt;
+            &lt;h5 class="card-title"&gt;产品名称&lt;/h5&gt;
+            &lt;p class="card-text"&gt;产品描述内容...&lt;/p&gt;
+            &lt;a href="contact.html" class="btn btn-sm btn-primary"&gt;询价&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                </div>
+                
+                <h6 class="mt-4">4.2 更换图片</h6>
+                <ol>
+                    <li>将新图片放入 <code>images/</code> 或 <code>images/products/</code> 目录</li>
+                    <li>图片格式支持：JPG、PNG、GIF</li>
+                    <li>推荐尺寸：产品图 400x300 像素，banner图 1920x600 像素</li>
+                    <li>修改HTML中对应的 <code>src="images/..."</code> 路径</li>
+                </ol>
+                
+                <h6 class="mt-4">4.3 更新联系方式</h6>
+                <p>打开 <code>contact.html</code>，修改以下内容：</p>
+                <ul>
+                    <li>电话号码：搜索 <code>021-</code></li>
+                    <li>邮箱：搜索 <code>@</code></li>
+                    <li>地址：搜索 <code>地址</code> 或 <code>Address</code></li>
+                </ul>
+                
+                <h6 class="mt-4">4.4 更新公司介绍</h6>
+                <p>打开 <code>about.html</code>，修改关于我们的内容。</p>
+            </div>
+            
+            <!-- Deploy -->
+            <div class="admin-card" id="deploy">
+                <h4><i class="bi bi-rocket-takeoff me-2"></i>5. 发布网站</h4>
+                
+                <div class="success-box">
+                    <strong><i class="bi bi-check-circle me-1"></i>自动化发布：</strong>
+                    网站已配置自动部署。每次修改完成后，运行发布脚本即可自动：
+                    <ul class="mb-0 mt-2">
+                        <li>创建版本快照</li>
+                        <li>自动更新版本号和日期</li>
+                        <li>发布到 GitHub Pages</li>
+                        <li>保留最近3个历史版本</li>
+                    </ul>
+                </div>
+                
+                <h6 class="mt-4">发布步骤：</h6>
+                <div class="code-block">
+<span class="comment"># 1. 进入网站目录</span>
+cd /root/.openclaw/agents/protoss0928/website/ziai-site
+
+<span class="comment"># 2. 提交修改（替换 YOUR_MESSAGE 为本次修改说明）</span>
+git add .
+git commit -m "YOUR_MESSAGE"
+git push
+
+<span class="comment"># 3. 运行部署脚本（自动发布+版本管理）</span>
+cd /root/.openclaw/agents/protoss0928/website
+./deploy.sh
+                </div>
+                
+                <h6 class="mt-4">发布后验证：</h6>
+                <ol>
+                    <li>等待约1-2分钟让GitHub Pages更新</li>
+                    <li>访问 <a href="https://protoss0928.github.io/ziai-site/" target="_blank">https://protoss0928.github.io/ziai-site/</a> 查看</li>
+                    <li>检查修改是否生效</li>
+                </ol>
+            </div>
+            
+            <!-- Rollback -->
+            <div class="admin-card" id="rollback">
+                <h4><i class="bi bi-arrow-counterclockwise me-2"></i>6. 版本回滚</h4>
+                
+                <p>网站自动保留最近3个版本。如需回滚到之前的版本：</p>
+                
+                <h6 class="mt-3">方法一：使用版本历史页面</h6>
+                <ol>
+                    <li>访问 <a href="versions.html">versions.html</a> 查看版本历史</li>
+                    <li>找到要回滚的版本</li>
+                    <li>点击"回滚到此版本"按钮</li>
+                </ol>
+                
+                <h6 class="mt-4">方法二：使用命令行回滚</h6>
+                <div class="code-block">
+<span class="comment"># 1. 查看所有版本</span>
+cd /root/.openclaw/agents/protoss0928/website/ziai-site
+git log --oneline
+
+<span class="comment"># 2. 查看可用备份</span>
+ls -la /root/.openclaw/agents/protoss0928/website/
+
+<span class="comment"># 3. 恢复到指定版本（替换 VERSION_ID 为git log中的版本号）</span>
+git checkout VERSION_ID
+
+<span class="comment"># 4. 重新发布</span>
+cd /root/.openclaw/agents/protoss0928/website
+./deploy.sh
+                </div>
+                
+                <h6 class="mt-4">方法三：从备份目录恢复</h6>
+                <div class="code-block">
+<span class="comment"># 查看备份目录</span>
+ls -la /root/.openclaw/agents/protoss0928/website/
+
+<span class="comment"># 如果有 ziai-site-v2 或 ziai-site-v3 备份</span>
+<span class="comment"># 可以复制备份内容覆盖当前版本，然后重新发布</span>
+cp -r /root/.openclaw/agents/protoss0928/website/ziai-site-v2/* /root/.openclaw/agents/protoss0928/website/ziai-site/
+                </div>
+                
+                <div class="warning-box">
+                    <strong><i class="bi bi-exclamation-triangle me-1"></i>注意：</strong>
+                    回滚会覆盖当前修改。回滚前请确保已保存重要更改。
+                </div>
+            </div>
+            
+            <!-- Troubleshooting -->
+            <div class="admin-card" id="troubleshooting">
+                <h4><i class="bi bi-question-circle me-2"></i>7. 常见问题</h4>
+                
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                Q: 页面显示样式错乱怎么办？
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                可能是浏览器缓存问题。尝试按 <code>Ctrl+Shift+R</code> 强制刷新页面，或清除浏览器缓存。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                Q: 图片无法显示怎么办？
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                检查：1) 图片文件是否存在；2) 路径是否正确；3) 图片格式是否为 JPG/PNG/GIF。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                Q: 发布后没变化？
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                GitHub Pages 需要1-2分钟更新。等待后刷新页面。如仍不显示，尝试清除浏览器缓存。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                Q: 误删了内容怎么恢复？
+                            </button>
+                        </h2>
+                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                使用版本回滚功能恢复。参见第6节"版本回滚"。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                Q: 如何联系技术支持？
+                            </button>
+                        </h2>
+                        <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                联系技术负责人小米（xiaomi）或通过企业微信群寻求帮助。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+  </div>
+</div>
+
+<footer class="text-center">
+  <div class="container">
+    <p class="mb-1">© 2026 上海子爱实业有限公司 Shanghai Zi'Ai Industrial Co., Ltd.</p>
+    <p class="small opacity-75">维护文档版本：<span id="docVersion">v20260516</span></p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

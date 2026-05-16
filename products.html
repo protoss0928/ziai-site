@@ -27,7 +27,7 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="index.html"><img src="images/logo.png" height="30" class="me-2" style="background:white;border-radius:4px;padding:2px 6px;box-shadow:0 1px 3px rgba(0,0,0,0.2)"> <span style="text-shadow:1px 1px 2px rgba(0,0,0,0.3)">子爱实业</span></a>
+    <a class="navbar-brand" href="index.html"><img src="images/logo.png" height="30" class="me-2"> 子爱实业</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
     <div class="collapse navbar-collapse" id="nav">
       <ul class="navbar-nav ms-auto">
@@ -35,6 +35,7 @@
         <li class="nav-item"><a class="nav-link" href="about.html">关于我们</a></li>
         <li class="nav-item"><a class="nav-link active" href="products.html">产品中心</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">联系我们</a></li>
+        <li class="nav-item"><a class="nav-link" href="admin.html"><i class="bi bi-gear"></i> 维护</a></li>
       </ul>
       <a href="en/products.html" class="lang-switch">EN</a>
     </div>
@@ -44,7 +45,7 @@
 <div class="page-header">
   <div class="container">
     <h1>产品中心 Products</h1>
-    <p class="lead">10大产品类别 一站式采购</p>
+    <p class="lead">8大产品类别 一站式采购</p>
   </div>
 </div>
 
@@ -52,13 +53,6 @@
   <div class="container">
     <h2 class="section-title text-center">产品分类 Product Categories</h2>
     <div class="row g-4 mb-5">
-      <div class="col-md-3 col-6">
-        <div class="cat-card" onclick="document.getElementById('fasteners').scrollIntoView({behavior:'smooth'})">
-          <img src="images/categories/fasteners_small.jpg" class="cat-icon" style="width:60px;height:60px;object-fit:cover;border-radius:8px;">
-          <h5>紧固件</h5>
-          <p class="text-muted small">Fasteners</p>
-        </div>
-      </div>
       <div class="col-md-3 col-6">
         <div class="cat-card" onclick="document.getElementById('hardware').scrollIntoView({behavior:'smooth'})">
           <img src="images/categories/hardware_small.jpg" class="cat-icon" style="width:60px;height:60px;object-fit:cover;border-radius:8px;">
@@ -102,13 +96,6 @@
         </div>
       </div>
       <div class="col-md-3 col-6">
-        <div class="cat-card" onclick="document.getElementById('ppe').scrollIntoView({behavior:'smooth'})">
-          <img src="images/categories/ppe_small.jpg" class="cat-icon" style="width:60px;height:60px;object-fit:cover;border-radius:8px;">
-          <h5>劳防用品</h5>
-          <p class="text-muted small">PPE</p>
-        </div>
-      </div>
-      <div class="col-md-3 col-6">
         <div class="cat-card" onclick="document.getElementById('office').scrollIntoView({behavior:'smooth'})">
           <img src="images/categories/office_small.jpg" class="cat-icon" style="width:60px;height:60px;object-fit:cover;border-radius:8px;">
           <h5>办公用品</h5>
@@ -124,61 +111,12 @@
       </div>
     </div>
 
-    <div id="fasteners" class="product-section">
-      <h3 class="mb-4"><img src="images/categories/fasteners_small.jpg" style="width:32px;height:32px;object-fit:cover;border-radius:4px;vertical-align:middle;margin-right:8px;">紧固件 Fasteners</h3>
-      <div class="row">
-        <div class="col-md-8">
-          <h5>产品概述 Product Overview</h5>
-          <p>紧固件是机械连接的基础元件，包括螺栓、螺钉、螺母、垫圈、销键、铆钉等。产品涵盖GB、ISO、DIN、ANSI、JIS等多种标准体系，广泛应用于钢结构、建筑幕墙、桥梁工程、机械设备、汽车总装、轨道交通、船舶建造等领域。</p>
-          
-          <h5 class="mt-3">产品系列 Product Series</h5>
-          <ul>
-            <li><strong>高强度螺栓 High Strength Bolts：</strong>大六角头螺栓、扭剪螺栓、法兰面螺栓，强度等级8.8级~12.9级，适用于钢结构和重要连接部位</li>
-            <li><strong>钢结构螺栓 Steel Structure Bolts：</strong>摩擦型高强螺栓、承压型高强螺栓、热镀锌螺栓，防腐性能好，适合户外和潮湿环境</li>
-            <li><strong>膨胀螺栓 Expansion Bolts：</strong>金属膨胀螺栓、尼龙膨胀螺栓、车修壁虎，适用于混凝土、砖墙、石材等多种基材</li>
-            <li><strong>化学锚栓 Chemical Anchors：</strong>乙烯基酯锚固胶、环氧锚固剂，锚固力强，适合开裂混凝土和受荷要求高的场合</li>
-            <li><strong>自攻螺钉 Self-Tapping Screws：</strong>盘头螺钉、沉头螺钉、六角法兰螺钉，材质有碳钢镀锌、不锈钢，适合薄板连接</li>
-            <li><strong>铆钉类 Rivets：</strong>抽芯铆钉、击芯铆钉、压铆螺柱，铆接强度高，适合无法焊接的场合</li>
-          </ul>
-
-          <h5 class="mt-3">应用领域 Applications</h5>
-          <p>钢结构建筑 | 桥梁工程 | 建筑幕墙 | 汽车总装 | 轨道交通 | 船舶建造 | 机械设备的装配与维修</p>
-
-          <h5 class="mt-3">为什么选择我们 Why Choose Us</h5>
-          <p>✓ 库存充足，供货周期短（常规3~5天，加急次日可达）<br>
-          ✓ 规格齐全：M6~M72，常规标准件均有备货<br>
-          ✓ 特殊材质可选：不锈钢304/316、镀锌、达克罗、热镀锌<br>
-          ✓ 可提供材质证明、扭矩系数检测报告、第三方检验报告</p>
-        </div>
-        <div class="col-md-4 text-end">
-          <a href="contact.html" class="btn btn-outline-primary">询价 Inquiry</a>
-        </div>
-      </div>
-    </div>
-
     <div id="hardware" class="product-section">
       <h3 class="mb-4"><img src="images/categories/hardware_small.jpg" style="width:32px;height:32px;object-fit:cover;border-radius:4px;vertical-align:middle;margin-right:8px;">五金标准件 Hardware Standard Parts</h3>
       <div class="row">
         <div class="col-md-8">
-          <h5>产品概述 Product Overview</h5>
-          <p>螺栓、螺母、垫圈、螺丝等标准紧固件。广泛应用于机械设备、电子产品、建筑工程、汽车制造、轨道交通等领域。我们提供GB、ISO、DIN、ANSI等多种标准产品，并支持非标定制。</p>
-          
-          <h5 class="mt-3">产品系列 Product Series</h5>
-          <ul>
-            <li><strong>螺栓类 Bolts：</strong>六角螺栓、法兰螺栓、沉头螺栓、内六角螺栓，材质涵盖碳钢、不锈钢、合金钢</li>
-            <li><strong>螺母类 Nuts：</strong>六角螺母、锁紧螺母、法兰螺母、自锁螺母，表面处理可做镀锌、达克罗、发黑</li>
-            <li><strong>垫圈类 Washers：</strong>平垫、弹垫、齿形垫、绝缘垫，规格从M2到M64全覆盖</li>
-            <li><strong>螺钉类 Screws：</strong>自攻螺钉、机螺钉、紧定螺钉、微型螺钉，精度等级达4.8级~12.9级</li>
-          </ul>
-
-          <h5 class="mt-3">应用领域 Applications</h5>
-          <p>机械设备 | 汽车制造 | 建筑工程 | 轨道交通 | 电子电器 | 医疗器械 | 石油化工 | 船舶海洋</p>
-
-          <h5 class="mt-3">为什么选择我们 Why Choose Us</h5>
-          <p>✓ 10年以上行业经验，品质稳定可靠<br>
-          ✓ 常规库存充足，供货周期短（3~7天）<br>
-          ✓ 支持小批量试单，最小起订量可议<br>
-          ✓ 可提供材质证明、检验报告、出厂合格证</p>
+          <p>螺栓、螺母、垫圈、螺丝等标准紧固件。广泛应用于机械设备、电子产品、建筑工程等领域。</p>
+          <p>Bolts, nuts, washers, screws and other standard fasteners. Widely used in machinery, electronics, construction and more.</p>
         </div>
         <div class="col-md-4 text-end">
           <a href="contact.html" class="btn btn-outline-primary">询价 Inquiry</a>
@@ -190,57 +128,8 @@
       <h3 class="mb-4"><img src="images/categories/sealing_small.jpg" style="width:32px;height:32px;object-fit:cover;border-radius:4px;vertical-align:middle;margin-right:8px;">密封件 Sealing Components</h3>
       <div class="row">
         <div class="col-md-8">
-          <h5>产品概述 Product Overview</h5>
-          <p>O型圈、密封垫片、机械密封、油封等密封产品。产品广泛应用于化工、石油、天然气、制药、食品加工、水处理、汽车、航空航天等行业。长期与国内外知名品牌合作，品质可靠。</p>
-          
-          <h5 class="mt-3">产品系列 Product Series</h5>
-          <ul>
-            <li><strong>O型圈 O-Rings：</strong>NBR、Viton（FKM）、EPDM、硅胶、氟硅胶等多种材质，规格从ID 1mm到500mm，支持来图来样定制</li>
-            <li><strong>密封垫片 Gaskets：</strong>石棉垫片、非石棉垫片、聚四氟乙烯（PTFE）垫片、金属缠绕垫片，耐温范围-200℃~+800℃</li>
-            <li><strong>机械密封 Mechanical Seals：</strong>单端面、双端面、釜用机械密封，轴径10mm~200mm，适合各种泵、压缩机、反应釜</li>
-            <li><strong>油封 Oil Seals：</strong>TC、SC、VC型骨架油封，材质有丁腈橡胶、氟橡胶、聚氨酯，最高耐温300℃</li>
-            <li><strong>其他密封 Other Seals：</strong>防尘套、导向带、活塞密封件、阀杆密封件，特种材料可按需定制</li>
-          </ul>
-
-          <h5 class="mt-3">应用领域 Applications</h5>
-          <p>化工 | 石油天然气 | 制药 | 食品加工 | 水处理 | 汽车工业 | 航空航天 | 电力能源</p>
-
-          <h5 class="mt-3">认证与质量 Certifications & Quality</h5>
-          <p>✓ ISO 9001质量管理体系认证<br>
-          ✓ FDA食品级认证（食品/医药行业）<br>
-          ✓ API认证（石油天然气行业）<br>
-          ✓ 可提供材质检测报告（SGS/BV）</p>
-        </div>
-        <div class="col-md-4 text-end">
-          <a href="contact.html" class="btn btn-outline-primary">询价 Inquiry</a>
-        </div>
-      </div>
-    </div>
-
-    <div id="electronics" class="product-section">
-      <h3 class="mb-4"><img src="images/categories/electronics_small.jpg" style="width:32px;height:32px;object-fit:cover;border-radius:4px;vertical-align:middle;margin-right:8px;">电子产品 Electronics & IT</h3>
-      <div class="row">
-        <div class="col-md-8">
-          <h5>产品概述 Product Overview</h5>
-          <p>电脑及周边设备、服务器、存储设备、网络设备、数码产品等。提供完整的IT硬件解决方案，涵盖企业办公、工厂生产、会议室、视频监控等多种应用场景。配备专业售前咨询和售后技术支持。</p>
-          
-          <h5 class="mt-3">产品系列 Product Series</h5>
-          <ul>
-            <li><strong>电脑及配件 Computers & Peripherals：</strong>台式机、笔记本电脑、显示器、打印机、扫描仪、键鼠外设，品牌涵盖联想、戴尔、惠普、华硕</li>
-            <li><strong>服务器及存储 Servers & Storage：</strong>塔式服务器、机架式服务器、NAS网络存储、磁盘阵列，满足企业数据管理需求</li>
-            <li><strong>网络设备 Network Equipment：</strong>交换机、路由器、无线AP、网线、光纤跳线，支持企业级网络建设</li>
-            <li><strong>音视频设备 Audio/Video Equipment：</strong>会议摄像头、拾音器、投影仪、商用显示器，适合会议室和培训室</li>
-            <li><strong>安防监控 Surveillance：</strong>网络摄像头、NVR录像机、监控存储、解码器，支持远程监控和管理</li>
-          </ul>
-
-          <h5 class="mt-3">服务内容 Services</h5>
-          <p>✓ 方案设计：根据客户需求定制IT硬件解决方案<br>
-          ✓ 设备采购：代理品牌丰富，价格有竞争力<br>
-          ✓ 安装调试：专业工程师上门安装部署<br>
-          ✓ 运维支持：7×24小时售后服务，终身技术支持</p>
-
-          <h5 class="mt-3">合作客户 Case Studies</h5>
-          <p>已为多家知名企业、工厂、医院、学校提供IT设备及服务，设备稳定运行多年，获得客户一致好评。</p>
+          <p>O型圈、密封垫片、机械密封等。产品广泛应用于化工、石油、天然气、制药、食品加工等行业。</p>
+          <p>O-rings, sealing gaskets, mechanical seals. Used in chemical, oil & gas, pharmaceutical, food processing industries.</p>
         </div>
         <div class="col-md-4 text-end">
           <a href="contact.html" class="btn btn-outline-primary">询价 Inquiry</a>
@@ -252,26 +141,8 @@
       <h3 class="mb-4"><img src="images/categories/nameplate_small.jpg" style="width:32px;height:32px;object-fit:cover;border-radius:4px;vertical-align:middle;margin-right:8px;">工艺铭牌 Industrial Nameplates</h3>
       <div class="row">
         <div class="col-md-8">
-          <h5>产品概述 Product Overview</h5>
-          <p>不锈钢铭牌、铝牌、塑料标牌、腐蚀牌、丝印牌等各类工艺标识产品。广泛应用于机械设备、电子电器、汽车摩托车、压力容器、管道阀门等行业，作为产品标识、安全警示、操作指引使用。</p>
-          
-          <h5 class="mt-3">产品系列 Product Series</h5>
-          <ul>
-            <li><strong>金属铭牌 Metal Nameplates：</strong>不锈钢铭牌、铝铭牌、铜铭牌，采用蚀刻、冲压、丝印等工艺，耐用性强，适合恶劣环境</li>
-            <li><strong>塑料标牌 Plastic Labels：</strong>PVC、PET、ABS塑料牌，色彩丰富，轻便耐用，适合室内使用</li>
-            <li><strong>腐蚀牌 Etched Plates：</strong>金属表面腐蚀填漆工艺，字体清晰，耐候性好，使用寿命长</li>
-            <li><strong>安全标识 Safety Signs：</strong>禁止、警告、指示、消防等各类安全标识牌，符合国家标准</li>
-            <li><strong>面板贴纸 Panel Stickers：</strong>亚克力面板、薄膜开关、PET/PVC贴纸，可带背胶，方便粘贴</li>
-          </ul>
-
-          <h5 class="mt-3">工艺特点 Process Features</h5>
-          <p>✓ 蚀刻、冲压、丝印、镭射、喷漆等多种工艺<br>
-          ✓ 可做磨砂、拉丝、镜面、喷砂等多种表面效果<br>
-          ✓ 支持小批量定制，最快48小时交货<br>
-          ✓ 颜色、尺寸、形状均可按需定制</p>
-
-          <h5 class="mt-3">应用领域 Applications</h5>
-          <p>机械设备 | 电子电器 | 汽车摩托 | 压力容器 | 管道阀门 | 建筑工程 | 电力电气 | 医疗器械</p>
+          <p>金属铭牌、标识标牌、NFC标签等。产品质量可靠，耐久性好，适用于各种工业环境。</p>
+          <p>Metal nameplates, signs, NFC tags. Reliable quality, durable for various industrial environments.</p>
         </div>
         <div class="col-md-4 text-end">
           <a href="contact.html" class="btn btn-outline-primary">询价 Inquiry</a>
@@ -280,29 +151,24 @@
     </div>
 
     <div id="tools" class="product-section">
-      <h3 class="mb-4"><img src="images/categories/tools_small.jpg" style="width:32px;height:32px;object-fit:cover;border-radius:4px;vertical-align:middle;margin-right:8px;">工具量具 Tools & Measuring Instruments</h3>
+      <h3 class="mb-4"><img src="images/categories/tools_small.jpg" style="width:32px;height:32px;object-fit:cover;border-radius:4px;vertical-align:middle;margin-right:8px;">工具量具 Tools & Measuring</h3>
       <div class="row">
         <div class="col-md-8">
-          <h5>产品概述 Product Overview</h5>
-          <p>手动工具、电动工具、汽保工具、计量量具、五金配件等。代理经销史丹利、世达、得伟、博世、徕卡、天康等知名品牌产品，品类齐全，价格优惠。</p>
-          
-          <h5 class="mt-3">产品系列 Product Series</h5>
-          <ul>
-            <li><strong>手动工具 Hand Tools：</strong>螺丝刀、扳手、钳子、锤子、锉刀、撬棒，碳钢/铬钒钢材质，手柄防滑设计</li>
-            <li><strong>电动工具 Power Tools：</strong>电钻、冲击钻、电锤、角磨机、电锯、砂光机，品牌：博世、得伟、日立</li>
-            <li><strong>测量量具 Measuring Instruments：</strong>游标卡尺、千分尺、百分表、水平尺、卷尺、激光测距仪，品牌：徕卡、三丰、马尔</li>
-            <li><strong>汽保工具 Auto Tools：</strong>套筒、接杆、扭力扳手、千斤顶、发动机吊机，专业汽修工具套装</li>
-            <li><strong>工具箱/包 Tool Storage：</strong>塑料工具箱、铝合金工具箱、工具包、零件盒，带托盘整理箱</li>
-          </ul>
+          <p>量具、刀具、夹具等。专业品质，精准测量，满足精密加工需求。</p>
+          <p>Measuring instruments, cutting tools, fixtures. Professional quality, precision measurement.</p>
+        </div>
+        <div class="col-md-4 text-end">
+          <a href="contact.html" class="btn btn-outline-primary">询价 Inquiry</a>
+        </div>
+      </div>
+    </div>
 
-          <h5 class="mt-3">品牌合作品牌 Brands</h5>
-          <p>Stanley | SATA | Dewalt | Bosch | Leica | Mitutoyo | Taeges | Kington</p>
-
-          <h5 class="mt-3">为什么选择我们 Why Choose Us</h5>
-          <p>✓ 品牌授权经销商，品质保证<br>
-          ✓ 常规型号有现货，当日或次日发货<br>
-          ✓ 提供技术支持，选型咨询服务<br>
-          ✓ 批量采购可申请优惠价格</p>
+    <div id="electronics" class="product-section">
+      <h3 class="mb-4"><img src="images/categories/electronics_small.jpg" style="width:32px;height:32px;object-fit:cover;border-radius:4px;vertical-align:middle;margin-right:8px;">电子产品 Electronics & IT</h3>
+      <div class="row">
+        <div class="col-md-8">
+          <p>电脑及周边、数码产品等。提供优质的IT设备和完善的售后服务。</p>
+          <p>Computers and peripherals, digital products. Quality IT equipment with full after-sales support.</p>
         </div>
         <div class="col-md-4 text-end">
           <a href="contact.html" class="btn btn-outline-primary">询价 Inquiry</a>
@@ -311,66 +177,11 @@
     </div>
 
     <div id="av" class="product-section">
-      <h3 class="mb-4"><img src="images/categories/av_small.jpg" style="width:32px;height:32px;object-fit:cover;border-radius:4px;vertical-align:middle;margin-right:8px;">视频/音频/会议系统 AV & Conference Systems</h3>
+      <h3 class="mb-4"><img src="images/categories/av_small.jpg" style="width:32px;height:32px;object-fit:cover;border-radius:4px;vertical-align:middle;margin-right:8px;">视频/音频/会议系统 Video/Audio/Conference</h3>
       <div class="row">
         <div class="col-md-8">
-          <h5>产品概述 Product Overview</h5>
-          <p>视频会议系统、音频设备、投影设备、商业显示器等会议及展示设备。广泛应用于企业会议室、培训室、多媒体教室、监控中心、展厅等场所，提供完整的音视频解决方案。</p>
-          
-          <h5 class="mt-3">产品系列 Product Series</h5>
-          <ul>
-            <li><strong>视频会议系统 Video Conferencing：</strong>会议摄像头、全向麦克风、扬声器、会议主机，支持Zoom、Teams、腾讯会议等主流平台</li>
-            <li><strong>商业显示器 Commercial Displays：</strong>LED拼接屏、触摸一体机、数字标牌，尺寸从43寸到98寸，亮度高，适合长时间运行</li>
-            <li><strong>投影设备 Projectors：</strong>激光投影仪、LED投影、办公投影，会议室投影解决方案，支持吊顶/桌面安装</li>
-            <li><strong>音响系统 Audio Systems：</strong>会议音箱、功放、麦克风、音频处理器，适合20~200平米会议室</li>
-            <li><strong>信号设备 Signal Equipment：</strong>视频分配器、转换器、延长器、矩阵切换器，支持4K HDMI/DP/DVI</li>
-          </ul>
-
-          <h5 class="mt-3">解决方案 Solutions</h5>
-          <p>✓ 小型会议室（4~8人）：摄像头+全向麦+显示屏一体化方案<br>
-          ✓ 中型会议室（8~20人）：专业麦克风阵列+音响+投影方案<br>
-          ✓ 大型会议室/报告厅：矩阵切换+多屏显示+专业音响系统<br>
-          ✓ 指挥中心/监控室：拼接屏+解码器+NVR一站式方案</p>
-
-          <h5 class="mt-3">服务内容 Services</h5>
-          <p>✓ 免费方案设计：根据会议室布局和需求定制<br>
-          ✓ 设备选型指导：推荐最适合的品牌和型号<br>
-          ✓ 安装调试服务：专业工程师上门安装部署<br>
-          ✓ 售后运维支持：7×24小时响应，终身维护</p>
-        </div>
-        <div class="col-md-4 text-end">
-          <a href="contact.html" class="btn btn-outline-primary">询价 Inquiry</a>
-        </div>
-      </div>
-    </div>
-
-    <div id="ppe" class="product-section">
-      <h3 class="mb-4"><img src="images/categories/ppe_small.jpg" style="width:32px;height:32px;object-fit:cover;border-radius:4px;vertical-align:middle;margin-right:8px;">劳防用品 Personal Protective Equipment (PPE)</h3>
-      <div class="row">
-        <div class="col-md-8">
-          <h5>产品概述 Product Overview</h5>
-          <p>劳防用品是保护劳动者在生产作业中免受职业伤害的个人防护装备。我们提供从头到脚的全系列防护产品，涵盖头部防护、面部防护、呼吸防护、手部防护、足部防护、身体防护等，满足工业生产、建筑施工、实验室操作等多种场景的安规要求。</p>
-          
-          <h5 class="mt-3">产品系列 Product Series</h5>
-          <ul>
-            <li><strong>安全帽 Safety Helmets：</strong>ABS安全帽、PE安全帽、玻璃钢安全帽，透气孔设计，防冲击、防穿刺，符合GB 2811标准，有白/黄/红/蓝/橙多色可选</li>
-            <li><strong>安全鞋 Safety Shoes：</strong>防砸、防刺穿、防滑、防静电、耐油、耐酸碱多功能安全鞋，鞋头采用钢包头或复合材料包头，PU/橡胶底，适合工厂车间和建筑工地</li>
-            <li><strong>防护手套 Protective Gloves：</strong>乳胶手套、尼龙手套、PU手套、焊工手套、防切割手套、耐高温手套、防静电手套，规格齐全，防护等级高</li>
-            <li><strong>护目镜/防护面罩 Safety Goggles & Face Shields：</strong>防飞溅护目镜、防蓝光眼镜、防雾面罩、焊接面罩，镜片采用聚碳酸酯材质，透光率高，抗冲击</li>
-            <li><strong>防护服/工作服 Protective Clothing：</strong>防静电服、防酸碱服、阻燃服、防寒服、手术服、一次性防护服，材质有棉、涤棉、覆膜无纺布多种选择</li>
-            <li><strong>呼吸防护 Respiratory Protection：</strong>一次性口罩、N95/KN95口罩、防毒面具、滤毒盒、长管呼吸器，适合粉尘、毒气、蒸汽等危害环境</li>
-            <li><strong>坠落防护 Fall Protection：</strong>安全带、安全绳、缓冲带、安全钩、水平生命线，适用于高空作业和脚手架作业</li>
-            <li><strong>其他防护 Other PPE：</strong>耳塞/耳罩、降噪帽、防护围裙、袖套、反光背心，满足特定行业需求</li>
-          </ul>
-
-          <h5 class="mt-3">应用领域 Applications</h5>
-          <p>工厂生产 | 建筑施工 | 焊接作业 | 实验室操作 | 医疗防护 | 物流仓储 | 油漆喷涂 | 电力维修</p>
-
-          <h5 class="mt-3">认证与质量 Certifications & Quality</h5>
-          <p>✓ 产品符合GB、EN、ANSI等国家标准和行业标准<br>
-          ✓ 特种劳防用品提供LA认证和检测报告<br>
-          ✓ 可为客户定制劳防用品方案，搭配推荐最优组合<br>
-          ✓ 长期为多家知名企业提供团购配套服务</p>
+          <p>会议系统、音响设备、视频设备等。提供完整的会议系统解决方案。</p>
+          <p>Conference systems, audio equipment, video devices. Complete meeting system solutions.</p>
         </div>
         <div class="col-md-4 text-end">
           <a href="contact.html" class="btn btn-outline-primary">询价 Inquiry</a>
@@ -382,23 +193,8 @@
       <h3 class="mb-4"><img src="images/categories/office_small.jpg" style="width:32px;height:32px;object-fit:cover;border-radius:4px;vertical-align:middle;margin-right:8px;">办公用品 Office Supplies</h3>
       <div class="row">
         <div class="col-md-8">
-          <h5>产品概述 Product Overview</h5>
-          <p>办公文具、打印耗材、办公用纸、办公家具、清洁用品等各类办公所需物资。一站式采购平台，品牌齐全，价格透明，帮助企业降低采购成本，提升办公效率。</p>
-          
-          <h5 class="mt-3">产品系列 Product Series</h5>
-          <ul>
-            <li><strong>办公文具 Office Stationery：</strong>笔、笔记本、文件夹、档案盒、订书机、胶带、计算器，晨光、得力、三木品牌</li>
-            <li><strong>打印耗材 Printing Supplies：</strong>硒鼓、粉盒、墨水、墨盒、打印纸、相纸，兼容品牌：格之格、彩帝、惠彩，原装：HP、Canon、Epson</li>
-            <li><strong>办公用纸 Office Paper：</strong>A4/A3复印纸、打印纸、热敏纸、照片纸、牛皮纸，品牌：亚太森博、Double A、佳印</li>
-            <li><strong>办公家具 Office Furniture：</strong>办公桌、办公椅、文件柜、密集架、货架展架，支持定制尺寸</li>
-            <li><strong>清洁用品 Cleaning Supplies：</strong>垃圾桶、垃圾袋、清洁剂、纸巾、手套、抹布，工业和办公清洁用品</li>
-          </ul>
-
-          <h5 class="mt-3">采购优势 Procurement Advantages</h5>
-          <p>✓ 一站式采购：8大品类，500+SKU，一单搞定<br>
-          ✓ 品牌齐全：晨光、得力、齐心、三木、HP、佳能等<br>
-          ✓ 价格优惠：批量采购享折扣，月结账期<br>
-          ✓ 送货上门：上海地区次日达，紧急订单当日达</p>
+          <p>文具、纸张、文件管理等。一站式办公采购解决方案。</p>
+          <p>Stationery, paper, file management. One-stop office procurement solutions.</p>
         </div>
         <div class="col-md-4 text-end">
           <a href="contact.html" class="btn btn-outline-primary">询价 Inquiry</a>
@@ -407,29 +203,11 @@
     </div>
 
     <div id="shelves" class="product-section">
-      <h3 class="mb-4"><img src="images/categories/shelves_small.jpg" style="width:32px;height:32px;object-fit:cover;border-radius:4px;vertical-align:middle;margin-right:8px;">货架展架 Shelves & Display Racks</h3>
+      <h3 class="mb-4"><img src="images/categories/shelves_small.jpg" style="width:32px;height:32px;object-fit:cover;border-radius:4px;vertical-align:middle;margin-right:8px;">货架展架 Shelves & Display</h3>
       <div class="row">
         <div class="col-md-8">
-          <h5>产品概述 Product Overview</h5>
-          <p>仓库货架、超市货架、展会展架、镀铬架、展示架等各类储物与展示设备。产品覆盖工业仓储、商业零售、展会展示等多种应用场景，支持标准尺寸采购和非标定制。</p>
-          
-          <h5 class="mt-3">产品系列 Product Series</h5>
-          <ul>
-            <li><strong>仓储货架 Warehouse Shelves：</strong>轻量级货架、中量级货架、重型货架、阁楼式货架、悬臂式货架，承载100kg~5000kg/层</li>
-            <li><strong>超市货架 Supermarket Shelves：</strong>单面货架、双面货架、端头架、促销架，适用于超市、便利店、药店</li>
-            <li><strong>镀铬架 Chrome Wire Shelves：</strong>电镀铬线网架、通风口设计，防锈美观，适合办公室、车间、实验室</li>
-            <li><strong>展会展架 Exhibition Racks：</strong>便携式展示架、折叠展示柜、KT板展架、灯箱展架，适合展会、会议、活动</li>
-            <li><strong>置物架 Storage Racks：</strong>厨房置物架、浴室置物架、五金工具架、鞋架，适合家庭和商业多种场景</li>
-          </ul>
-
-          <h5 class="mt-3">定制服务 Customization</h5>
-          <p>✓ 标准尺寸：常规规格有现货，可当天发货<br>
-          ✓ 非标定制：按客户图纸定做，3~7天交货<br>
-          ✓ 颜色选择：常规白色、黑色、蓝色，可定制颜色<br>
-          ✓ 安装服务：上海及周边地区提供上门安装服务</p>
-
-          <h5 class="mt-3">应用领域 Applications</h5>
-          <p>仓库存储 | 工厂车间 | 超市零售 | 便利店 | 药店 | 展会展厅 | 办公区域</p>
+          <p>货架、展示架、储物柜等。适用于仓库、店铺、办公室等多种场所。</p>
+          <p>Shelving, display racks, storage cabinets. Suitable for warehouses, stores, offices and more.</p>
         </div>
         <div class="col-md-4 text-end">
           <a href="contact.html" class="btn btn-outline-primary">询价 Inquiry</a>

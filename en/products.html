@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Center | Products - Shanghai Zi'Ai Industrial Co., Ltd.</title>
+    <title>产品中心 | Products - 上海子爱实业有限公司</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
     <style>
@@ -27,332 +27,189 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="index.html"><img src="../images/logo.png" height="30" class="me-2" style="background:white;border-radius:4px;padding:2px 6px;box-shadow:0 1px 3px rgba(0,0,0,0.2)"> Zi'Ai Industrial</a>
+    <a class="navbar-brand" href="../index.html"><img src="../images/logo.png" height="30" class="me-2"> 子爱实业</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
     <div class="collapse navbar-collapse" id="nav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link active" href="products.html">Product Center</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.html">首页 Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="../about.html">关于我们</a></li>
+        <li class="nav-item"><a class="nav-link active" href="../products.html">产品中心</a></li>
+        <li class="nav-item"><a class="nav-link" href="../contact.html">联系我们</a></li>
       </ul>
-      <a href="../products.html" class="lang-switch">中文</a>
+      <a href="en/products.html" class="lang-switch">EN</a>
     </div>
   </div>
 </nav>
 
 <div class="page-header">
   <div class="container">
-    <h1>Products</h1>
-    <p class="lead">8 Product Categories, One-Stop Procurement</p>
+    <h1>产品中心 Products</h1>
+    <p class="lead">8大产品类别 一站式采购</p>
   </div>
 </div>
 
 <div class="section bg-white">
   <div class="container">
-    <h2 class="section-title text-center">Product Categories</h2>
+    <h2 class="section-title text-center">产品分类 Product Categories</h2>
     <div class="row g-4 mb-5">
       <div class="col-md-3 col-6">
         <div class="cat-card" onclick="document.getElementById('hardware').scrollIntoView({behavior:'smooth'})">
-          <img src="../images/categories/hardware_small.jpg" class="cat-icon" style="width:60px;height:60px;object-fit:cover;border-radius:8px;">
-          <h5>Hardware & Fasteners</h5>
+          <div class="cat-icon">🔩</div>
+          <h5>五金标准件</h5>
           <p class="text-muted small">Hardware</p>
         </div>
       </div>
       <div class="col-md-3 col-6">
         <div class="cat-card" onclick="document.getElementById('sealing').scrollIntoView({behavior:'smooth'})">
-          <img src="../images/categories/sealing_small.jpg" class="cat-icon" style="width:60px;height:60px;object-fit:cover;border-radius:8px;">
-          <h5>Sealing Components</h5>
+          <div class="cat-icon">⭕</div>
+          <h5>密封件</h5>
           <p class="text-muted small">Sealing</p>
         </div>
       </div>
       <div class="col-md-3 col-6">
         <div class="cat-card" onclick="document.getElementById('nameplate').scrollIntoView({behavior:'smooth'})">
-          <img src="../images/categories/nameplate_small.jpg" class="cat-icon" style="width:60px;height:60px;object-fit:cover;border-radius:8px;">
-          <h5>Industrial Nameplates</h5>
+          <div class="cat-icon">🏷️</div>
+          <h5>工艺铭牌</h5>
           <p class="text-muted small">Nameplates</p>
         </div>
       </div>
       <div class="col-md-3 col-6">
         <div class="cat-card" onclick="document.getElementById('tools').scrollIntoView({behavior:'smooth'})">
-          <img src="../images/categories/tools_small.jpg" class="cat-icon" style="width:60px;height:60px;object-fit:cover;border-radius:8px;">
-          <h5>Tools & Measuring</h5>
+          <div class="cat-icon">📐</div>
+          <h5>工具量具</h5>
           <p class="text-muted small">Tools</p>
         </div>
       </div>
       <div class="col-md-3 col-6">
         <div class="cat-card" onclick="document.getElementById('electronics').scrollIntoView({behavior:'smooth'})">
-          <img src="../images/categories/electronics_small.jpg" class="cat-icon" style="width:60px;height:60px;object-fit:cover;border-radius:8px;">
-          <h5>Electronics & IT</h5>
+          <div class="cat-icon">💻</div>
+          <h5>电子产品</h5>
           <p class="text-muted small">Electronics</p>
         </div>
       </div>
       <div class="col-md-3 col-6">
         <div class="cat-card" onclick="document.getElementById('av').scrollIntoView({behavior:'smooth'})">
-          <img src="../images/categories/av_small.jpg" class="cat-icon" style="width:60px;height:60px;object-fit:cover;border-radius:8px;">
+          <div class="cat-icon">📹</div>
           <h5>视频/音频/会议</h5>
           <p class="text-muted small">AV Systems</p>
         </div>
       </div>
       <div class="col-md-3 col-6">
         <div class="cat-card" onclick="document.getElementById('office').scrollIntoView({behavior:'smooth'})">
-          <img src="../images/categories/office_small.jpg" class="cat-icon" style="width:60px;height:60px;object-fit:cover;border-radius:8px;">
-          <h5>Office Supplies</h5>
+          <div class="cat-icon">📎</div>
+          <h5>办公用品</h5>
           <p class="text-muted small">Office</p>
         </div>
       </div>
       <div class="col-md-3 col-6">
         <div class="cat-card" onclick="document.getElementById('shelves').scrollIntoView({behavior:'smooth'})">
-          <img src="../images/categories/shelves_small.jpg" class="cat-icon" style="width:60px;height:60px;object-fit:cover;border-radius:8px;">
-          <h5>Shelves & Display</h5>
+          <div class="cat-icon">🏪</div>
+          <h5>货架展架</h5>
           <p class="text-muted small">Shelves</p>
         </div>
       </div>
     </div>
 
     <div id="hardware" class="product-section">
-      <h3 class="mb-4"><img src="../images/categories/hardware_small.jpg" style="width:32px;height:32px;object-fit:cover;border-radius:4px;vertical-align:middle;margin-right:8px;">Hardware & Fasteners</h3>
+      <h3 class="mb-4"><span class="me-2">🔩</span>五金标准件 Hardware Standard Parts</h3>
       <div class="row">
         <div class="col-md-8">
-          <h5>Product Overview</h5>
-          <p>Bolts, nuts, washers, screws and other standard fasteners. Widely used in machinery, electronics, construction, automotive, rail transit and more. We supply GB, ISO, DIN, ANSI standard products and accept custom non-standard specifications.</p>
-          
-          <h5 class="mt-3">Product Series</h5>
-          <ul>
-            <li><strong>Bolts：</strong>Hex bolts, flange bolts, socket head bolts, carriage bolts. Materials: carbon steel, stainless steel, alloy steel</li>
-            <li><strong>Nuts：</strong>Hex nuts, lock nuts, flange nuts, self-locking nuts. Surface treatments: zinc plating, Dacromet, black oxide</li>
-            <li><strong>Washers：</strong>Flat washers, spring washers, tooth washers, insulating washers. Sizes from M2 to M64</li>
-            <li><strong>Screws：</strong>Self-tapping screws, machine screws, set screws, micro screws. Precision grades from 4.8 to 12.9</li>
-          </ul>
-
-          <h5 class="mt-3">Applications</h5>
-          <p>Industrial Machinery | Automotive | Construction | Rail Transit | Electronics | Medical Devices | Petrochemical | Marine</p>
-
-          <h5 class="mt-3">Why Choose Us</h5>
-          <p>✓ 10+ years industry experience, stable and reliable quality<br>
-          ✓ Large stock, short delivery (3~7 days)<br>
-          ✓ MOQ negotiable, sample orders welcome<br>
-          ✓ Material certificates, inspection reports, and certificates of conformity available</p>
+          <p>螺栓、螺母、垫圈、螺丝等标准紧固件。广泛应用于机械设备、电子产品、建筑工程等领域。</p>
+          <p>Bolts, nuts, washers, screws and other standard fasteners. Widely used in machinery, electronics, construction and more.</p>
         </div>
         <div class="col-md-4 text-end">
-          <a href="contact.html" class="btn btn-outline-primary">Inquiry</a>
+          <a href="../contact.html" class="btn btn-outline-primary">询价 Inquiry</a>
         </div>
       </div>
     </div>
 
     <div id="sealing" class="product-section">
-      <h3 class="mb-4"><img src="../images/categories/sealing_small.jpg" style="width:32px;height:32px;object-fit:cover;border-radius:4px;vertical-align:middle;margin-right:8px;">Sealing Components</h3>
+      <h3 class="mb-4"><span class="me-2">⭕</span>密封件 Sealing Components</h3>
       <div class="row">
         <div class="col-md-8">
-          <h5>Product Overview</h5>
-          <p>O-rings, sealing gaskets, mechanical seals, oil seals, and more. Widely used in chemical, oil & gas, pharmaceutical, food processing, water treatment, automotive, aerospace industries. Long-term partnerships with leading domestic and international brands ensure reliable quality.</p>
-          
-          <h5 class="mt-3">Product Series</h5>
-          <ul>
-            <li><strong>O-Rings：</strong>NBR, Viton (FKM), EPDM, silicone, fluorosilicone. Sizes from ID 1mm to 500mm. Custom shapes and materials available</li>
-            <li><strong>Gaskets：</strong>Asbestos gaskets, non-asbestos gaskets, PTFE gaskets, spiral wound gaskets. Temperature range: -200°C to +800°C</li>
-            <li><strong>Mechanical Seals：</strong>Single seal, double seal, reactor agitator seals. Shaft sizes 10mm~200mm, suitable for pumps, compressors, reactors</li>
-            <li><strong>Oil Seals：</strong>TC, SC, VC type hub seals. Materials: NBR, FKM, polyurethane. Max temperature: 300°C</li>
-            <li><strong>Other Seals：</strong>Dust boots, guide rings, piston seals, valve stem seals. Special materials on request</li>
-          </ul>
-
-          <h5 class="mt-3">Applications</h5>
-          <p>Chemical | Oil & Gas | Pharmaceutical | Food Processing | Water Treatment | Automotive | Aerospace | Power & Energy</p>
-
-          <h5 class="mt-3">Certifications & Quality</h5>
-          <p>✓ ISO 9001 Quality Management System Certified<br>
-          ✓ FDA Food-Grade Certification (Food & Medical)<br>
-          ✓ API Certification (Oil & Gas Industry)<br>
-          ✓ Material test reports available (SGS/BV)</p>
+          <p>O型圈、密封垫片、机械密封等。产品广泛应用于化工、石油、天然气、制药、食品加工等行业。</p>
+          <p>O-rings, sealing gaskets, mechanical seals. Used in chemical, oil & gas, pharmaceutical, food processing industries.</p>
         </div>
         <div class="col-md-4 text-end">
-          <a href="contact.html" class="btn btn-outline-primary">Inquiry</a>
-        </div>
-      </div>
-    </div>
-
-    <div id="electronics" class="product-section">
-      <h3 class="mb-4"><img src="../images/categories/electronics_small.jpg" style="width:32px;height:32px;object-fit:cover;border-radius:4px;vertical-align:middle;margin-right:8px;">Electronics & IT Products</h3>
-      <div class="row">
-        <div class="col-md-8">
-          <h5>Product Overview</h5>
-          <p>Computers and peripherals, servers, storage devices, networking equipment, digital products, and more. We provide complete IT hardware solutions for enterprise offices, factory production, conference rooms, video surveillance, and other scenarios. Professional pre-sales consulting and after-sales technical support included.</p>
-          
-          <h5 class="mt-3">Product Series</h5>
-          <ul>
-            <li><strong>Computers & Peripherals：</strong>Desktop PCs, laptops, monitors, printers, scanners, keyboards and mice. Brands: Lenovo, Dell, HP, ASUS</li>
-            <li><strong>Servers & Storage：</strong>Tower servers, rack-mounted servers, NAS storage, disk arrays for enterprise data management</li>
-            <li><strong>Network Equipment：</strong>Switches, routers, wireless APs, ethernet cables, fiber optic cables. Enterprise-grade network solutions</li>
-            <li><strong>Audio/Video Equipment：</strong>Conference cameras, microphones, projectors, commercial displays for meeting rooms and training centers</li>
-            <li><strong>Security & Surveillance：</strong>IP cameras, NVRs, surveillance storage, decoders. Remote monitoring and management supported</li>
-          </ul>
-
-          <h5 class="mt-3">Services</h5>
-          <p>✓ Solution Design: Customized IT hardware solutions based on customer requirements<br>
-          ✓ Equipment Procurement: Rich brand agency portfolio, competitive pricing<br>
-          ✓ Installation & Commissioning: Professional engineers for on-site deployment<br>
-          ✓ Maintenance Support: 7×24 after-sales service, lifetime technical support</p>
-
-          <h5 class="mt-3">Case Studies</h5>
-          <p>We have provided IT equipment and services to many well-known enterprises, factories, hospitals, and schools. Equipment has been running stably for years, earning consistent praise from customers.</p>
-        </div>
-        <div class="col-md-4 text-end">
-          <a href="contact.html" class="btn btn-outline-primary">Inquiry</a>
+          <a href="../contact.html" class="btn btn-outline-primary">询价 Inquiry</a>
         </div>
       </div>
     </div>
 
     <div id="nameplate" class="product-section">
-      <h3 class="mb-4"><img src="images/categories/nameplate_small.jpg" style="width:32px;height:32px;object-fit:cover;border-radius:4px;vertical-align:middle;margin-right:8px;">Industrial Nameplates</h3>
+      <h3 class="mb-4"><span class="me-2">🏷️</span>工艺铭牌 Industrial Nameplates</h3>
       <div class="row">
         <div class="col-md-8">
-          <h5>Product Overview</h5>
-          <p>Stainless steel nameplates, aluminum signs, plastic labels, etched plates, screen printed panels and other industrial identification products. Widely used in mechanical equipment, electronics, automobiles, pressure vessels, pipelines and valves industries for product identification, safety warnings, and operation guidance.</p>
-          
-          <h5 class="mt-3">Product Series</h5>
-          <ul>
-            <li><strong>Metal Nameplates：</strong>Stainless steel, aluminum, and copper nameplates with etching, stamping, and screen printing processes. Durable and suitable for harsh environments.</li>
-            <li><strong>Plastic Labels：</strong>PVC, PET, ABS plastic signs with rich colors, lightweight and durable for indoor use.</li>
-            <li><strong>Etched Plates：</strong>Metal surface corrosion and paint-fill technology, clear text, excellent weather resistance and long service life.</li>
-            <li><strong>Safety Signs：</strong>Prohibition, warning, instruction, fire-fighting signs compliant with national standards.</li>
-            <li><strong>Panel Stickers：</strong>Acrylic panels, membrane switches, PET/PVC stickers with adhesive backing for easy application.</li>
-          </ul>
-
-          <h5 class="mt-3">Process Features</h5>
-          <p>✓ Etching, stamping, screen printing, laser, painting and other processes<br>
-          ✓ Available finishes: matte, brushed, mirror, sandblasted<br>
-          ✓ Small batch customization supported, fastest 48-hour delivery<br>
-          ✓ Custom colors, sizes, and shapes available</p>
-
-          <h5 class="mt-3">Applications</h5>
-          <p>Mechanical Equipment | Electronics | Automotive | Pressure Vessels | Piping | Construction | Electrical | Medical Devices</p>
+          <p>金属铭牌、标识标牌、NFC标签等。产品质量可靠，耐久性好，适用于各种工业环境。</p>
+          <p>Metal nameplates, signs, NFC tags. Reliable quality, durable for various industrial environments.</p>
         </div>
         <div class="col-md-4 text-end">
-          <a href="contact.html" class="btn btn-outline-primary">Inquiry</a>
+          <a href="../contact.html" class="btn btn-outline-primary">询价 Inquiry</a>
         </div>
       </div>
     </div>
 
     <div id="tools" class="product-section">
-      <h3 class="mb-4"><img src="images/categories/tools_small.jpg" style="width:32px;height:32px;object-fit:cover;border-radius:4px;vertical-align:middle;margin-right:8px;">Tools & Measuring Instruments</h3>
+      <h3 class="mb-4"><span class="me-2">📐</span>工具量具 Tools & Measuring</h3>
       <div class="row">
         <div class="col-md-8">
-          <h5>Product Overview</h5>
-          <p>Hand tools, power tools, automotive tools, measuring instruments, and hardware accessories. Authorized distributor of Stanley, SATA, Dewalt, Bosch, Leica, Mitutoyo and other leading brands with complete product range and competitive pricing.</p>
-          
-          <h5 class="mt-3">Product Series</h5>
-          <ul>
-            <li><strong>Hand Tools：</strong>Screwdrivers, wrenches, pliers, hammers, files, pry bars in carbon steel/chromium vanadium steel with anti-slip handles.</li>
-            <li><strong>Power Tools：</strong>Electric drills, impact drills, hammers, angle grinders, saws, sanders. Brands: Bosch, Dewalt, Hitachi.</li>
-            <li><strong>Measuring Instruments：</strong>Vernier calipers, micrometers, dial indicators, levels, tape measures, laser distance meters. Brands: Leica, Mitutoyo, Mahr.</li>
-            <li><strong>Automotive Tools：</strong>Sockets, extensions, torque wrenches, jacks, engine hoists. Professional auto repair tool sets.</li>
-            <li><strong>Tool Storage：</strong>Plastic tool boxes, aluminum tool boxes, tool bags, parts cases with tray organizers.</li>
-          </ul>
-
-          <h5 class="mt-3">Brands</h5>
-          <p>Stanley | SATA | Dewalt | Bosch | Leica | Mitutoyo | Taeges | Kington</p>
-
-          <h5 class="mt-3">Why Choose Us</h5>
-          <p>✓ Authorized distributor with quality guarantee<br>
-          ✓ In-stock items ship same day or next day<br>
-          ✓ Technical support and selection consultation<br>
-          ✓ Bulk purchase discounts available</p>
+          <p>量具、刀具、夹具等。专业品质，精准测量，满足精密加工需求。</p>
+          <p>Measuring instruments, cutting tools, fixtures. Professional quality, precision measurement.</p>
         </div>
         <div class="col-md-4 text-end">
-          <a href="contact.html" class="btn btn-outline-primary">Inquiry</a>
+          <a href="../contact.html" class="btn btn-outline-primary">询价 Inquiry</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="electronics" class="product-section">
+      <h3 class="mb-4"><span class="me-2">💻</span>电子产品 Electronics & IT</h3>
+      <div class="row">
+        <div class="col-md-8">
+          <p>电脑及周边、数码产品等。提供优质的IT设备和完善的售后服务。</p>
+          <p>Computers and peripherals, digital products. Quality IT equipment with full after-sales support.</p>
+        </div>
+        <div class="col-md-4 text-end">
+          <a href="../contact.html" class="btn btn-outline-primary">询价 Inquiry</a>
         </div>
       </div>
     </div>
 
     <div id="av" class="product-section">
-      <h3 class="mb-4"><img src="images/categories/av_small.jpg" style="width:32px;height:32px;object-fit:cover;border-radius:4px;vertical-align:middle;margin-right:8px;">AV & Conference Systems</h3>
+      <h3 class="mb-4"><span class="me-2">📹</span>视频/音频/会议系统 Video/Audio/Conference</h3>
       <div class="row">
         <div class="col-md-8">
-          <h5>Product Overview</h5>
-          <p>Video conferencing systems, audio equipment, projectors, and commercial displays for meetings and presentations. Widely used in corporate conference rooms, training rooms, multimedia classrooms, monitoring centers, and exhibition halls. Complete audio-visual solutions provided.</p>
-          
-          <h5 class="mt-3">Product Series</h5>
-          <ul>
-            <li><strong>Video Conferencing：</strong>Conference cameras, omnidirectional microphones, speakers, conference hosts. Compatible with Zoom, Teams, Tencent Conference and other major platforms.</li>
-            <li><strong>Commercial Displays：</strong>LED video walls, touch screen all-in-ones, digital signage from 43" to 98". High brightness, suitable for long running hours.</li>
-            <li><strong>Projectors：</strong>Laser projectors, LED projectors, office projectors with ceiling/desktop mounting options.</li>
-            <li><strong>Audio Systems：</strong>Conference speakers, amplifiers, microphones, audio processors for 20~200 sqm conference rooms.</li>
-            <li><strong>Signal Equipment：</strong>Video splitters, converters, extenders, matrix switchers supporting 4K HDMI/DP/DVI.</li>
-          </ul>
-
-          <h5 class="mt-3">Solutions</h5>
-          <p>✓ Small conference room (4~8 people): Camera + Mic + Display integrated solution<br>
-          ✓ Medium conference room (8~20 people): Professional mic array + audio + projector solution<br>
-          ✓ Large conference room/auditorium: Matrix switching + multi-screen + professional audio system<br>
-          ✓ Command center/monitoring room: Video wall + decoder + NVR one-stop solution</p>
-
-          <h5 class="mt-3">Services</h5>
-          <p>✓ Free solution design: Customized based on room layout and requirements<br>
-          ✓ Equipment selection guidance: Best brands and models recommended<br>
-          ✓ Installation and commissioning: Professional engineers on-site deployment<br>
-          ✓ After-sales support: 7×24 response, lifetime maintenance</p>
+          <p>会议系统、音响设备、视频设备等。提供完整的会议系统解决方案。</p>
+          <p>Conference systems, audio equipment, video devices. Complete meeting system solutions.</p>
         </div>
         <div class="col-md-4 text-end">
-          <a href="contact.html" class="btn btn-outline-primary">Inquiry</a>
+          <a href="../contact.html" class="btn btn-outline-primary">询价 Inquiry</a>
         </div>
       </div>
     </div>
 
     <div id="office" class="product-section">
-      <h3 class="mb-4"><img src="images/categories/office_small.jpg" style="width:32px;height:32px;object-fit:cover;border-radius:4px;vertical-align:middle;margin-right:8px;">Office Supplies</h3>
+      <h3 class="mb-4"><span class="me-2">📎</span>办公用品 Office Supplies</h3>
       <div class="row">
         <div class="col-md-8">
-          <h5>Product Overview</h5>
-          <p>Office stationery, printing supplies, office paper, office furniture, and cleaning supplies. One-stop procurement platform with comprehensive brands and transparent pricing, helping enterprises reduce procurement costs and improve office efficiency.</p>
-          
-          <h5 class="mt-3">Product Series</h5>
-          <ul>
-            <li><strong>Office Stationery：</strong>Pens, notebooks, folders, archive boxes, staplers, tape, calculators. Brands: M&G, Deli, Sunwood.</li>
-            <li><strong>Printing Supplies：</strong>Toner cartridges, ink cartridges, ink, print paper, photo paper. Compatible: G&G, Colors, Print-Rite. Original: HP, Canon, Epson.</li>
-            <li><strong>Office Paper：</strong>A4/A3 copy paper, print paper, thermal paper, photo paper, kraft paper. Brands: APR, Double A, Jia Yin.</li>
-            <li><strong>Office Furniture：</strong>Office desks, chairs, filing cabinets, compact storage, shelves and display racks. Custom sizes supported.</li>
-            <li><strong>Cleaning Supplies：</strong>Trash cans, garbage bags, cleaners, tissue, gloves, rags for industrial and office use.</li>
-          </ul>
-
-          <h5 class="mt-3">Procurement Advantages</h5>
-          <p>✓ One-stop procurement: 8 categories, 500+ SKUs in one order<br>
-          ✓ Complete brands: M&G, Deli, Kinsky, Sunwood, HP, Canon, etc.<br>
-          ✓ Competitive pricing: Bulk discounts, monthly payment terms<br>
-          ✓ Door delivery: Next day delivery in Shanghai, same day for urgent orders</p>
+          <p>文具、纸张、文件管理等。一站式办公采购解决方案。</p>
+          <p>Stationery, paper, file management. One-stop office procurement solutions.</p>
         </div>
         <div class="col-md-4 text-end">
-          <a href="contact.html" class="btn btn-outline-primary">Inquiry</a>
+          <a href="../contact.html" class="btn btn-outline-primary">询价 Inquiry</a>
         </div>
       </div>
     </div>
 
     <div id="shelves" class="product-section">
-      <h3 class="mb-4"><img src="images/categories/shelves_small.jpg" style="width:32px;height:32px;object-fit:cover;border-radius:4px;vertical-align:middle;margin-right:8px;">Shelves & Display Racks</h3>
+      <h3 class="mb-4"><span class="me-2">🏪</span>货架展架 Shelves & Display</h3>
       <div class="row">
         <div class="col-md-8">
-          <h5>Product Overview</h5>
-          <p>Warehouse shelves, supermarket shelves, exhibition display racks, chrome wire shelves, and display stands for storage and display. Covering industrial storage, commercial retail, exhibition display and other applications. Standard sizes and custom solutions available.</p>
-          
-          <h5 class="mt-3">Product Series</h5>
-          <ul>
-            <li><strong>Warehouse Shelves：</strong>Light-duty, medium-duty, heavy-duty shelves, mezzanine floors, cantilever racks. Load capacity 100kg~5000kg per layer.</li>
-            <li><strong>Supermarket Shelves：</strong>Single-sided, double-sided shelves, end caps, promotional displays for supermarkets, convenience stores, pharmacies.</li>
-            <li><strong>Chrome Wire Shelves：</strong>Chrome-plated wire racks with ventilation design. Rust-proof and attractive, suitable for offices, workshops, laboratories.</li>
-            <li><strong>Exhibition Racks：</strong>Portable display stands, folding display cabinets, KT board displays, lightbox displays for exhibitions, conferences, events.</li>
-            <li><strong>Storage Racks：</strong>Kitchen racks, bathroom racks, tool racks, shoe racks for home and commercial use.</li>
-          </ul>
-
-          <h5 class="mt-3">Customization Services</h5>
-          <p>✓ Standard sizes: In-stock items ship same day<br>
-          ✓ Custom fabrication: Based on customer drawings, 3~7 days delivery<br>
-          ✓ Color options: Standard white, black, blue, custom colors available<br>
-          ✓ Installation service: On-site installation in Shanghai and surrounding areas</p>
-
-          <h5 class="mt-3">Applications</h5>
-          <p>Warehouse Storage | Factory Workshop | Supermarket | Convenience Store | Pharmacy | Exhibition Hall | Office Area</p>
+          <p>货架、展示架、储物柜等。适用于仓库、店铺、办公室等多种场所。</p>
+          <p>Shelving, display racks, storage cabinets. Suitable for warehouses, stores, offices and more.</p>
         </div>
         <div class="col-md-4 text-end">
-          <a href="contact.html" class="btn btn-outline-primary">Inquiry</a>
+          <a href="../contact.html" class="btn btn-outline-primary">询价 Inquiry</a>
         </div>
       </div>
     </div>
@@ -361,7 +218,7 @@
 
 <footer class="text-center">
   <div class="container">
-    <p class="mb-1">© 2026 Shanghai Zi'Ai Industrial Co., Ltd. Shanghai Zi'Ai Industrial Co., Ltd.</p>
+    <p class="mb-1">© 2026 上海子爱实业有限公司 Shanghai Zi'Ai Industrial Co., Ltd.</p>
     <p class="small opacity-75">电话 Tel: 021-64640827 | 邮箱 Email: zhuangjj_0928@163.com</p>
   </div>
 </footer>
